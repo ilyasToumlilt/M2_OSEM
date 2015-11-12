@@ -5,7 +5,6 @@
 #include "words_generator.h"
 #include "distributed_words_counter.h"
 
-#define NB_WORDS      1024
 #define MAX_WORD_SIZE   32
 
 int main(int argc, char** argv)
@@ -21,12 +20,12 @@ int main(int argc, char** argv)
   printf("Starting dwc with:\n\t%d\tThreads\n\t%d\tWords\n\t%d\tMaxWordSize\n",
 	 nbThreads, nbWords, MAX_WORD_SIZE);
   
-  char** myText = random_text_generator(NB_WORDS, MAX_WORD_SIZE);
+  char** myText = random_text_generator(nbWords, MAX_WORD_SIZE);
   //print_text(myText, NB_WORDS);
   
   //printf("\n\n\n---------------------------------------------------\n");
 
-  super_count(myText, nbThreads, NB_WORDS, MAX_WORD_SIZE);
+  super_count(myText, nbThreads, nbWords, MAX_WORD_SIZE);
 
   free_text(myText, NB_WORDS);
   return EXIT_SUCCESS;

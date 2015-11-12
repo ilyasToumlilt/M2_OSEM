@@ -1,1 +1,35 @@
-empty file
+\documentclass[a4paper, 11pt]{article}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[frenchb]{babel}
+\usepackage{makecell}
+\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
+
+\lstset{language=C,
+	 	basicstyle=\ttfamily,
+		keywordstyle=\ttfamily\textcolor{RubineRed},
+		identifierstyle=,columns=fullflexible,
+		commentstyle=\textcolor{OliveGreen},
+		showstringspaces=false, breaklines=true,tabsize=4}
+
+\begin{document}
+ 
+\title{TP1 - OSEM}
+\author{Ilyas Toumlilt\\Yassine Aroua}
+\date{12/11/2015}
+ 
+\maketitle
+
+\include{intro}
+
+\include{p1}
+
+\include{p2}
+
+\include{p3}
+
+\include{conclusion}
+
+\end{document}
