@@ -47,7 +47,7 @@ void reset_dwcArray(struct dwc_t* dwcArray, int nbThreads, int maxWordSize)
   int i;
   for(i=0; i<nbThreads; i++) {
     dwcArray[i].id = i;
-    memset((void*)dwcArray[i].countArray, 0, maxWordSize*sizeof(int));
+    //memset((void*)dwcArray[i].countArray, 0, maxWordSize*sizeof(int));
   }
 }
 
@@ -100,30 +100,39 @@ void* threads_handler(void* dwc_p)
   return NULL;
 }
 
-int super_count(char** text, int nbThreads, int nbWords, int maxWordSize)
+struct dwc_bench* super_count(char** text, int nbThreads, 
+			      int nbWords, int maxWordSize)
 {
+  /* on a besoin de compter les temps de traitement pour les benchs */
+  struct dwc_bench* ret = (struct dwc_bench*)malloc(sizeof(struct dwc_bench));
+  ret->mono_time  = 0;
+  ret->multi_time = 0;
+  clock_t mono_clock = clock();
+  
+  /* init */
   pthread_t threadsArray[nbThreads-1];
   struct dwc_t* dwcArray = alloc_dwcArray(nbThreads, maxWordSize);
   reset_dwcArray(dwcArray, nbThreads, maxWordSize);
-  //print_dwcArray(dwcArray, nbThreads, maxWordSize);
-  //printf("\n\n\n---------------------------------------------------\n");
   
   /* variables globales pour les threads ... */
   globalNbThreads=nbThreads;
   globalNbWords=nbWords;
   globalText=text;
 
-  /* on a besoin de compter les temps de traitement */
-  clock_t start_clock = clock();
-  
+  clock_t mult_clock = clock();
+
   /* creation des threads */
   int i;
   for(i=0; i<nbThreads-1; i++){
     pthread_create(&(threadsArray[i]), NULL, threads_handler, (void*)(dwcArray+i));
   }
+
+  ret->mono_time += ( clock() - mono_clock );
   
   /* le main travaille aussi ... */
   countWordsFromArray(dwcArray+i, text, i*(nbWords/nbThreads),nbWords-1);
+
+  mono_clock = clock();
 
   /* attente de terminaison des threads */
   for(i=0; i<nbThreads-1; i++){
@@ -132,28 +141,43 @@ int super_count(char** text, int nbThreads, int nbWords, int maxWordSize)
       exit(1);
     }
   }
-  
-  clock_t multi_time = clock() - start_clock;
 
-  //print_dwcArray(dwcArray, nbThreads, maxWordSize);
+  ret->multi_time += ( clock() - mult_clock );
 
   /* merge des résultats */
   merge_dwcArray(dwcArray, nbThreads, maxWordSize);
-  
-  clock_t mono_time = clock() - multi_time - start_clock;
-
-  //printf("\n\n\n---------------------------------------------------\n");
-  //print_dwcArray(dwcArray, 1, maxWordSize);
 
   /* total */
   int total = countTotalWords(dwcArray, maxWordSize);
-  printf("Total=%d\n", total);
-  printf("Times: \n\tstart clock:%f\n\tmulti:%f\n\tmono:%f\n\ttotal:%f\n", 
-	 (float)start_clock, (float)multi_time, (float)mono_time,
-	 (float)(multi_time+mono_time));
 
   free_dwcArray(dwcArray, nbThreads);
 
-  return 0;
+  ret->mono_time += ( clock() - mono_clock );
+
+  return ret;
+}
+
+clock_t mono_count(char** text, int nbWords, int maxWordSize)
+{
+  clock_t time = clock();
+
+  /* init */
+  printf("YO\n");
+  struct dwc_t* dwcArray = alloc_dwcArray(1, maxWordSize);
+  printf("YO\n");
+  reset_dwcArray(dwcArray, 1, maxWordSize);
+  printf("YO\n");
+
+  /* allez hop on compte */
+  countWordsFromArray(dwcArray, text, 0, nbWords-1);
+  printf("YO\n");
+
+  int total = countTotalWords(dwcArray, maxWordSize);
+  printf("YO\n");
+
+  free_dwcArray(dwcArray, 1);
+  printf("YO\n");
+
+  return (clock() - time);
 }
 
