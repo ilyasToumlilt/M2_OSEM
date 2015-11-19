@@ -1,1 +1,17 @@
-\paragraph{Introduction :}
+\paragraph{Introduction}:\\
+
+Ce rapport propose une vérification expérimentale de l'efficacité de la distribution d'une structure de données en répartissant les traitements, dans une architecture Many-Cores à accès mémoire non uniforemes : cc-NUMA.\\
+
+Cette étude a été menée sur TSAR, un simulateur de processeur many-cores précis au cycle près et au bit, pouvant être configuré jusqu'à 256 processeurs, et sur ALMOS, un système d'exploitation conçu par Ghassan Almaless dans le cadre de sa thèse, spécifiquement pour TSAR et qui repose sur le même paradigme de programmation en mémoire partagée que d’autres systèmes monolithiques tels que Linux ou BSD.\\
+
+Pour pouvoir mesurer la répartition de traitements respectant la localité des accès mémoire, nous avons décidé, dans le cadre de ce TP, de réaliser une application calculant de manière équitable sur un nombre défini ( pour chaque exécution ) de processus, la taille en mots d'un texte donné. Une application qu'on a décidé de nommer : dwc ( distributed words counter ).\\
+
+De manière générale, ce TP propose de vérifier expérimentalement s’il est possible
+que la conception du noyau d'ALMOS et les applications actuelles, reposant sur la notion de threads et de mémoire partagée, puissent passer à l’échelle en nombre de coeurs.\\
+
+%Le but de ce TP est de prendre en main la plateforme d'expérimentation, pour cela nous devons écrire un premier programme multi-thread. Pour pouvoir utiliser ALMOS sur un prototype virtuel TSAR il faut normalement installer plusieurs technologies open-source comme un cross-compilateur GCC pour Mips, la librairies virtuel de prototypage SocLib, les composants relatif à TSAR et enfin SystemCASS.
+%Dans notre cas nous allons donc travailler sur la version stand-alone et ready-to-use de la distribution d'ALMOS et ceux afin d'éviter d'avoir à tout installer. Pour pouvoir utiliser le mode stand-alone il a fallu quand même fallut installer plusieurs paquets sous ubuntu avec la commande suivante :
+%\newline 
+%"\textit{sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1}"
+%\newline 
+%Aussi il ne faut pas oublier de vérifier que xTerm est bien installer sur sa machine.

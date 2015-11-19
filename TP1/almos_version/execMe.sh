@@ -18,6 +18,10 @@ cd ../../
 
 for nbClusters in 1 4 16 64
 do
+
+    # on organise les logs par dossiers
+    mkdir test/pf1/logs.$nbClusters
+    
     for nbWords in 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384
     do
         
@@ -49,7 +53,7 @@ EOF
         # Copie des logs
         for j in {0..3}
         do
-            cp tty$j tty$j.$nbClusters.$nbWords
+            cp tty$j logs.$nbClusters/tty$j.$nbClusters.$nbWords
         done
         cd ../../
     done

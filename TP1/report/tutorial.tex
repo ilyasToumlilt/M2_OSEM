@@ -14,6 +14,19 @@
 		commentstyle=\textcolor{OliveGreen},
 		showstringspaces=false, breaklines=true,tabsize=4}
 
+\usepackage{graphicx} %pour les images
+
+\usepackage{xcolor}
+
+\setcounter{tocdepth}{3}
+\definecolor{Zgris}{rgb}{0.87,0.85,0.85}
+
+\newsavebox{\BBbox}
+\newenvironment{DDbox}[1]{
+\begin{lrbox}{\BBbox}\begin{minipage}{\linewidth}}
+{\end{minipage}\end{lrbox}\noindent\colorbox{Zgris}{\usebox{\BBbox}} \\
+[.5cm]}
+
 \begin{document}
  
 \title{TP1 - OSEM}
