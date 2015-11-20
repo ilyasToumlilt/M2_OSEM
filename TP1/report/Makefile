@@ -4,4 +4,4 @@ tutorial: tutorial.tex
 	pdflatex tutorial.tex
 
 clean:
-	rm -f *.aux *.log *.pdf *.bbl *.blg *.toc
+	rm -f *.aux *.log *.bbl *.blg *.toc
