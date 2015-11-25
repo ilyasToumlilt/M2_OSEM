@@ -1,0 +1,106 @@
+
+AlmOS Bootloader			[ STARTED ]
+
+Loading Kernel Image			[ OK ]
+Loading Boot Information Block		[ OK ]
+Setup Kernel Boot Information		[ OK ]
+Preparing Kernel's Memory Layout	[ OK ]
+
+Booting AlmOS Kernel ...
+
+Boot Info:
+	Arch Info 1ffe000
+	Text <0x0 : 0x32000>
+	Data <0x32000 : 0x3b000>
+	Reserved <0x1ffa000 : 0x2000000>
+	BSC 0, BSP 1, CPU NR 4, MMU ON
+	Kernel Entry Point @0x8000a1f0
+
+Initialization of 1/1 Online Clusters	[ 269522 ]
+Mapping Region <0x0 - 0x2000000> : <0x80000000 - 0x82000000>
+PPM 0 [ 8192, 7879, 6303, 1181, 393 ]
+PPM 0 pages_tbl [1, 1, 1, 0, 2, 1, 2, 2, 1, 14, ]
+Mapping Region <0x11800000 - 0x11801000> -> <0xff800000 - 0xff801000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff800000> Size <0x1000> Irq <-1>
+Mapping Region <0x12200000 - 0x12201000> -> <0xff801000 - 0xff802000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xff801000> Size <0x10> Irq <0>
+Mapping Region <0x12200010 - 0x12201010> -> <0xff802000 - 0xff803000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xff802010> Size <0x10> Irq <1>
+Mapping Region <0x12200020 - 0x12201020> -> <0xff803000 - 0xff804000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xff803020> Size <0x10> Irq <2>
+Mapping Region <0x12200030 - 0x12201030> -> <0xff804000 - 0xff805000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xff804030> Size <0x10> Irq <3>
+Mapping Region <0x15200000 - 0x15201000> -> <0xff805000 - 0xff806000>
+Found Device: BLKDEV (H.D.D Controler)
+Base <0xff805000> Size <0x20> Irq <5>
+Mapping Region <0x32200000 - 0x32201000> -> <0xff806000 - 0xff807000>
+Found Device: DMA (DMA Channel)
+Base <0xff806000> Size <0x14> Irq <4>
+Mapping Region <0x13200000 - 0x13400000> -> <0xff807000 - 0xffa07000>
+Found Device: FB (Frame Buffer Controler)
+Base <0xff807000> Size <0x200000> Irq <-1>
+All clusters have been Initialized [ 4007930 ]
+
+           ____        ___        ___       ___    _______    ________     
+          /    \      |   |      |   \     /   |  /  ___  \  /  ____  |   
+         /  __  \      | |        |   \___/   |  |  /   \  | | /    |_/   
+        /  /  \  \     | |        |  _     _  |  | |     | | | |______     
+       /  /____\  \    | |        | | \   / | |  | |     | | \______  \ 
+      /   ______   \   | |     _  | |  \_/  | |  | |     | |  _     | |    
+     /   /      \   \  | |____/ | | |       | |  |  \___/  | | \____/ |  
+    /_____/    \_____\|_________/|___|     |___|  \_______/  |________/   
+
+
+		 Advanced Locality Management Operating System
+		   UPMC/LIP6/SoC (12 August 2012 - 22:25:48)
+
+
+INFO: Building Distributed Quaternary Decision Tree (DQDT)
+INFO: DQDT has been built [553874]
+INFO: kernel replication started on cid 0 [4599576]
+INFO: kernel replication done on cid 0 [3024]
+INFO: Starting Thread Idle (81ff2000)	OK
+INFO: Starting Thread Idle (81ff3000)	OK
+INFO: Starting Thread Idle (81fe4000)	OK
+INFO: Starting Thread Idle (81ff1000)	OK
+INFO: kvfsd has been created
+INFO: cpu 1, DQDT update ended [ 4686542 - 3632 ]
+cpu 1, cid 0, level 4, index 0, Indicators Summary:
+   M 7871, T 0, U 0
+   Pages_tbl [1, 1, 1, 1, 1, 1, 2, 2, 1, 14, ]
+INFO: Starting KVFSD on CPU 1 [ 4701312 ]
+INFO: Virtual File System (VFS) Is Ready
+INFO: Loading Init Process [ /bin/init ]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [INIT, size 146565]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [INIT, size 146565]
+INFO: sys_signal: handler @413c has been registred for signal 15
+INFO: sys_signal: handler @413c has been registred for signal 1
+sys_fork: new task will be placed on cluster 0, cpu 1 [0]
+sys_fork: cpu 0, pid 1, done [s:5661145, bR:5670310, aR:9612568, e:9613654, t:3952509]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [SH, size 150105]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [SH, size 150105]
+INFO: pthread_destroy: pid 2, tid 0 (81fa1000), cluster 0, cpu 1, tm 2679 [ 24, 0, 0, 0, 0, 4 ][13691614]
+sys_fork: new task will be placed on cluster 0, cpu 2 [0]
+INFO: System Current TimeStamp 15996150
+sys_fork: cpu 1, pid 2, done [s:14349097, bR:14358622, aR:18298704, e:18299683, t:3950586]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [DWC, size 148391]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [DWC, size 148391]
+INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2598 [ 29, 0, 0, 0, 0, 4 ][22340822]
+INFO: do_thread_create: tid 80178000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 9063, c 7136, a 107, l 665, s 608, e 17579 ][23977756]
+INFO: do_thread_create: tid 8017a000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4350, c 7986, a 81, l 648, s 538, e 13603 ][24019210]
+INFO: do_thread_create: tid 8017c000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4346, c 8367, a 125, l 613, s 543, e 13994 ][24060554]
+INFO: pthread_destroy: pid 3, tid 0 (80178000), cluster 0, cpu 3, tm 2977 [ 1, 0, 0, 0, 0, 1 ][24102084]
+INFO: pthread_destroy: pid 3, tid 2 (8017a000), cluster 0, cpu 0, tm 3304 [ 1, 0, 0, 0, 0, 0 ][24104934]
+INFO: pthread_destroy: pid 3, tid 3 (8017c000), cluster 0, cpu 1, tm 2850 [ 1, 0, 0, 0, 0, 0 ][24119230]
+INFO: Thread 81fba000 has released FPU on CPU 2

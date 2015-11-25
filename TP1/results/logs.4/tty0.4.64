@@ -1,0 +1,160 @@
+
+AlmOS Bootloader			[ STARTED ]
+
+Loading Kernel Image			[ OK ]
+Loading Boot Information Block		[ OK ]
+Setup Kernel Boot Information		[ OK ]
+Preparing Kernel's Memory Layout	[ OK ]
+
+Booting AlmOS Kernel ...
+
+Boot Info:
+	Arch Info 80bfe000
+	Text <0x80000000 : 0x80032000>
+	Data <0x80032000 : 0x8003b000>
+	Reserved <0x80bfa000 : 0x80c00000>
+	BSC 2, BSP 8, CPU NR 16, MMU ON
+	Kernel Entry Point @0x8000a1f0
+
+Initialization of 4/4 Online Clusters	[ 247663 ]
+Mapping Region <0x80000000 - 0x80c00000> : <0x80000000 - 0x80c00000>
+Mapping Region <0x0 - 0xc00000> -> <0x80c00000 - 0x81800000>
+Mapping Region <0x40000000 - 0x40c00000> -> <0x81800000 - 0x82400000>
+Mapping Region <0xc0000000 - 0xc0c00000> -> <0x82400000 - 0x83000000>
+PPM 2 [ 3072, 2829, 2263, 424, 141 ]
+PPM 2 pages_tbl [1, 2, 2, 0, 2, 1, 1, 1, 2, 4, ]
+Mapping Region <0xf00000 - 0xf01000> -> <0xff800000 - 0xff801000>
+Mapping Region <0xc0f00000 - 0xc0f01000> -> <0xff801000 - 0xff802000>
+Mapping Region <0x40f00000 - 0x40f01000> -> <0xff802000 - 0xff803000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff800000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff801000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff802000> Size <0x1000> Irq <-1>
+Mapping Region <0x80f00000 - 0x80f01000> -> <0xff803000 - 0xff804000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff803000> Size <0x1000> Irq <-1>
+Mapping Region <0xbfd00000 - 0xbff00000> -> <0xff804000 - 0xffa04000>
+Found Device: FB (Frame Buffer Controler)
+Base <0xff804000> Size <0x200000> Irq <-1>
+Mapping Region <0xbff10000 - 0xbff11000> -> <0xffa04000 - 0xffa05000>
+Found Device: BLKDEV (H.D.D Controler)
+Base <0xffa04000> Size <0x20> Irq <0>
+Mapping Region <0xbff20000 - 0xbff21000> -> <0xffa05000 - 0xffa06000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa05000> Size <0x10> Irq <2>
+Mapping Region <0xbff20010 - 0xbff21010> -> <0xffa06000 - 0xffa07000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa06010> Size <0x10> Irq <3>
+Mapping Region <0xbff20020 - 0xbff21020> -> <0xffa07000 - 0xffa08000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa07020> Size <0x10> Irq <4>
+Mapping Region <0xbff20030 - 0xbff21030> -> <0xffa08000 - 0xffa09000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa08030> Size <0x10> Irq <5>
+Mapping Region <0xbff30000 - 0xbff31000> -> <0xffa09000 - 0xffa0a000>
+Found Device: DMA (DMA Channel)
+Base <0xffa09000> Size <0x14> Irq <1>
+All clusters have been Initialized [ 1731251 ]
+
+           ____        ___        ___       ___    _______    ________     
+          /    \      |   |      |   \     /   |  /  ___  \  /  ____  |   
+         /  __  \      | |        |   \___/   |  |  /   \  | | /    |_/   
+        /  /  \  \     | |        |  _     _  |  | |     | | | |______     
+       /  /____\  \    | |        | | \   / | |  | |     | | \______  \ 
+      /   ______   \   | |     _  | |  \_/  | |  | |     | |  _     | |    
+     /   /      \   \  | |____/ | | |       | |  |  \___/  | | \____/ |  
+    /_____/    \_____\|_________/|___|     |___|  \_______/  |________/   
+
+
+		 Advanced Locality Management Operating System
+		   UPMC/LIP6/SoC (12 August 2012 - 22:25:48)
+
+
+INFO: Building Distributed Quaternary Decision Tree (DQDT)
+INFO: DQDT has been built [528130]
+INFO: kernel replication started on cid 2 [2293599]
+INFO: kernel replication started on cid 3 [2293555]
+INFO: kernel replication started on cid 1 [2293598]
+INFO: kernel replication started on cid 0 [2293575]
+INFO: kernel replication done on cid 2 [2901]
+INFO: kernel replication done on cid 3 [776698]
+INFO: kernel replication done on cid 1 [1546657]
+INFO: kernel replication done on cid 0 [1553771]
+INFO: Starting Thread Idle (800ed000)	OK
+INFO: Starting Thread Idle (800ea000)	OK
+INFO: Starting Thread Idle (800ec000)	OK
+INFO: Starting Thread Idle (800eb000)	OK
+INFO: Starting Thread Idle (817ce000)	OK
+INFO: Starting Thread Idle (823ce000)	OK
+INFO: Starting Thread Idle (82fcc000)	OK
+INFO: Starting Thread Idle (817cf000)	OK
+INFO: Starting Thread Idle (82fce000)	OK
+INFO: Starting Thread Idle (817cd000)	OK
+INFO: Starting Thread Idle (82fcd000)	OK
+INFO: Starting Thread Idle (82fcb000)	OK
+INFO: Starting Thread Idle (817cc000)	OK
+INFO: Starting Thread Idle (823cc000)	OK
+INFO: Starting Thread Idle (823cd000)	OK
+INFO: Starting Thread Idle (823cb000)	OK
+INFO: kvfsd has been created
+INFO: cpu 13, DQDT update ended [ 3944875 - 4524 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 11311, T 0, U 0
+   Pages_tbl [1, INFO: Starting KVFSD on CPU 8 [ 3963283 ]
+3, 4, 3, 2, 1, 7, 4, 8, 16, ]
+INFO: Virtual File System (VFS) Is Ready
+INFO: Loading Init Process [ /bin/init ]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [INIT, size 146565]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [INIT, size 146565]
+INFO: sys_signal: handler @413c has been registred for signal 15
+INFO: sys_signal: handler @413c has been registred for signal 1
+sys_fork: new task will be placed on cluster 0, cpu 1 [0]
+sys_fork: cpu 0, pid 1, done [s:5051238, bR:5062802, aR:8731144, e:8732250, t:3681012]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [SH, size 150105]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [SH, size 150105]
+INFO: pthread_destroy: pid 2, tid 0 (817aa000), cluster 0, cpu 1, tm 2823 [ 24, 0, 0, 0, 0, 4 ][12619166]
+sys_fork: new task will be placed on cluster 2, cpu 0 [0]
+sys_fork: cpu 1, pid 2, done [s:13319328, bR:13331187, aR:17005285, e:17006386, t:3687058]
+INFO: System Current TimeStamp 17012890
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [DWC, size 148391]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [DWC, size 148391]
+INFO: pthread_destroy: pid 3, tid 0 (80bdc000), cluster 2, cpu 0, tm 2425 [ 29, 0, 0, 0, 0, 3 ][20814858]
+INFO: do_thread_create: tid 80ba4000, pid 3, order 0, flags 40, cluster 2, cpu 1 [ m 4023, c 7276, a 3618114, l 720, s 530, e 3630663 ][25116518]
+INFO: do_thread_create: tid 80ba6000, pid 3, order 2, flags 40, cluster 2, cpu 2 [ m 4037, c 7173, a 106, l 541, s 406, e 12263 ][25164540]
+INFO: do_thread_create: tid 80ba8000, pid 3, order 3, flags 40, cluster 2, cpu 3 [ m 4437, c 7601, a 107, l 542, s 430, e 13117 ][25199589]
+INFO: do_thread_create: tid 817b3000, pid 3, order 4, flags 40, cluster 0, cpu 2 [ m 5661, c 7450, a 177, l 864, s 572, e 14724 ][25239448]
+INFO: do_thread_create: tid 80cda000, pid 3, order 5, flags 40, cluster 0, cpu 3 [ m 5480, c 7204, a 225, l 838, s 544, e 14291 ][25282078]
+INFO: do_thread_create: tid 823d5000, pid 3, order 6, flags 40, cluster 1, cpu 0 [ m 11546, c 6415, a 194, l 901, s 411, e 19467 ][25330327]
+INFO: do_thread_create: tid 823d7000, pid 3, order 7, flags 40, cluster 1, cpu 1 [ m 5225, c 7414, a 197, l 890, s 377, e 14103 ][25385360]
+INFO: do_thread_create: tid 823dc000, pid 3, order 8, flags 40, cluster 1, cpu 2 [ m 5525, c 8610, a 209, l 889, s 405, e 15638 ][25431213]
+INFO: do_thread_create: tid 823de000, pid 3, order 9, flags 40, cluster 1, cpu 3 [ m 6413, c 8692, a 195, l 920, s 612, e 16832 ][25477209]
+INFO: do_thread_create: tid 82fd5000, pid 3, order 10, flags 40, cluster 3, cpu 0 [ m 11717, c 6315, a 182, l 864, s 444, e 19522 ][25527019]
+INFO: do_thread_create: tid 82fd7000, pid 3, order 11, flags 40, cluster 3, cpu 1 [ m 6353, c 8020, a 123, l 813, s 407, e 15716 ][25569824]
+INFO: do_thread_create: tid 82fda000, pid 3, order 12, flags 40, cluster 3, cpu 2 [ m 5309, c 8026, a 184, l 800, s 445, e 14764 ][25614590]
+INFO: do_thread_create: tid 82fdc000, pid 3, order 13, flags 40, cluster 3, cpu 3 [ m 5549, c 8031, a 184, l 805, s 439, e 15008 ][25657497]
+INFO: do_thread_create: tid 80cf4000, pid 3, order 14, flags 40, cluster 0, cpu 0 [ m 6059, c 8583, a 177, l 874, s 621, e 16314 ][25705646]
+INFO: do_thread_create: tid 80bab000, pid 3, order 15, flags 40, cluster 2, cpu 1 [ m 4395, c 6744, a 115, l 578, s 339, e 12171 ][25748686]
+INFO: pthread_destroy: pid 3, tid 2 (80ba6000), cluster 2, cpu 2, tm 3413 [ 1, 0, 0, 0, 0, 0 ][25775327]
+INFO: pthread_destroy: pid 3, tid 3 (80ba8000), cluster 2, cpu 3, tm 4105 [ 1, 0, 0, 0, 0, 0 ][25778613]
+INFO: pthread_destroy: pid 3, tid 4 (817b3000), cluster 0, cpu 2, tm 4434 [ 1, 0, 0, 0, 0, 0 ][25781536]
+INFO: pthread_destroy: pid 3, tid 5 (80cda000), cluster 0, cpu 3, tm 4747 [ 1, 0, 0, 0, 0, 0 ][25785492]
+INFO: pthread_destroy: pid 3, tid 6 (823d5000), cluster 1, cpu 0, tm 4716 [ 1, 0, 0, 0, 0, 0 ][25789518]
+INFO: pthread_destroy: pid 3, tid 7 (823d7000), cluster 1, cpu 1, tm 4828 [ 1, 0, 0, 0, 0, 0 ][25791979]
+INFO: pthread_destroy: pid 3, tid 8 (823dc000), cluster 1, cpu 2, tm 4809 [ 1, 0, 0, 0, 0, 0 ][25795930]
+INFO: pthread_destroy: pid 3, tid 9 (823de000), cluster 1, cpu 3, tm 5469 [ 1, 0, 0, 0, 0, 0 ][25798468]
+INFO: pthread_destroy: pid 3, tid 0 (80ba4000), cluster 2, cpu 1, tm 3785 [ 3, 0, 0, 0, 0, 0 ][25800644]
+INFO: pthread_destroy: pid 3, tid 10 (82fd5000), cluster 3, cpu 0, tm 5627 [ 1, 0, 0, 0, 0, 0 ][25802490]
+INFO: pthread_destroy: pid 3, tid 11 (82fd7000), cluster 3, cpu 1, tm 4972 [ 1, 0, 0, 0, 0, 0 ][25804782]
+INFO: pthread_destroy: pid 3, tid 12 (82fda000), cluster 3, cpu 2, tm 4096 [ 1, 0, 0, 0, 0, 0 ][25808717]
+INFO: pthread_destroy: pid 3, tid 13 (82fdc000), cluster 3, cpu 3, tm 4212 [ 1, 0, 0, 0, 0, 0 ][25811054]
+INFO: pthread_destroy: pid 3, tid 14 (80cf4000), cluster 0, cpu 0, tm 3865 [ 1, 0, 0, 0, 0, 0 ][25813595]
+INFO: pthread_destroy: pid 3, tid 15 (80bab000), cluster 2, cpu 1, tm 1828 [ 1, 0, 0, 0, 0, 0 ][25860447]
+INFO: Thread 80b8a000 has released FPU on CPU 8

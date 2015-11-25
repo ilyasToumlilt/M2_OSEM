@@ -1,0 +1,20 @@
+init: System Revision Info [Almos almix-v1.2 2011 tsar mipsel mips32]
+init: Listening to signals 15, 1
+init: Connexion-Shell has been created [pid 2]
+started 
+going to exec /bin/dwc 16384 
+dwc ended 
+[/HOME/ROOT]>Starting dwc with:
+	4	Threads
+	16384	Words
+	32	MaxWordSize
+Mono Bench :
+	mono_time=2857844.000000
+	multi_time=0.000000
+	total=2857844.000000
+Multi Bench :
+	mono_time=197282.000000
+	multi_time=988484.000000
+	total=1185766.000000
+Speedup ==>2.410125
+[MainDwc] Finished

@@ -1,0 +1,8 @@
+[FPU] core 0, ctx restored for pid 1, tid 0 [5638197]
+[IPI] cpu 1, U 100, B 0 [5671695]
+[FPU] core 1, ctx restored for pid 2, tid 1 [14317309]
+[IPI] cpu 2, U 100, B 0 [14359025]
+[FPU] core 2, ctx restored for pid 3, tid 1 [22819112]
+[IPI] cpu 3, U 100, B 0 [23023951]
+[IPI] cpu 0, U 100, B 0 [23066226]
+[IPI] cpu 1, U 100, B 0 [23104391]

@@ -1,0 +1,377 @@
+
+AlmOS Bootloader			[ STARTED ]
+
+Loading Kernel Image			[ OK ]
+Loading Boot Information Block		[ OK ]
+Setup Kernel Boot Information		[ OK ]
+Preparing Kernel's Memory Layout	[ OK ]
+
+Booting AlmOS Kernel ...
+
+Boot Info:
+	Arch Info b0bfe000
+	Text <0xb0000000 : 0xb0032000>
+	Data <0xb0032000 : 0xb003b000>
+	Reserved <0xb0bfa000 : 0xb0c00000>
+	BSC 11, BSP 44, CPU NR 64, MMU ON
+	Kernel Entry Point @0x8000a1f0
+
+Initialization of 16/16 Online Clusters	[ 248812 ]
+Mapping Region <0xb0000000 - 0xb0c00000> : <0x80000000 - 0x80c00000>
+Mapping Region <0x0 - 0xc00000> -> <0x80c00000 - 0x81800000>
+Mapping Region <0x10000000 - 0x10c00000> -> <0x81800000 - 0x82400000>
+Mapping Region <0x20000000 - 0x20c00000> -> <0x82400000 - 0x83000000>
+Mapping Region <0x30000000 - 0x30c00000> -> <0x83000000 - 0x83c00000>
+Mapping Region <0x40000000 - 0x40c00000> -> <0x83c00000 - 0x84800000>
+Mapping Region <0x50000000 - 0x50c00000> -> <0x84800000 - 0x85400000>
+Mapping Region <0x60000000 - 0x60c00000> -> <0x85400000 - 0x86000000>
+Mapping Region <0x70000000 - 0x70c00000> -> <0x86000000 - 0x86c00000>
+Mapping Region <0x80000000 - 0x80c00000> -> <0x86c00000 - 0x87800000>
+Mapping Region <0x90000000 - 0x90c00000> -> <0x87800000 - 0x88400000>
+Mapping Region <0xa0000000 - 0xa0c00000> -> <0x88400000 - 0x89000000>
+Mapping Region <0xc0000000 - 0xc0c00000> -> <0x89000000 - 0x89c00000>
+Mapping Region <0xd0000000 - 0xd0c00000> -> <0x89c00000 - 0x8a800000>
+Mapping Region <0xe0000000 - 0xe0c00000> -> <0x8a800000 - 0x8b400000>
+Mapping Region <0xf0000000 - 0xf0c00000> -> <0x8b400000 - 0x8c000000>
+Mapping Region <0x70f00000 - 0x70f01000> -> <0xff800000 - 0xff801000>
+Mapping Region <0x30f00000 - 0x30f01000> -> <0xff801000 - 0xff802000>
+Mapping Region <0xf0f00000 - 0xf0f01000> -> <0xff802000 - 0xff803000>
+PPM 11 [ 3072, 2829, 2263, 424, 141 ]
+Mapping Region <0xa0f00000 - 0xa0f01000> -> <0xff803000 - 0xff804000>
+Mapping Region <0xe0f00000 - 0xe0f01000> -> <0xff804000 - 0xff805000>
+Mapping Region <0x60f00000 - 0x60f01000> -> <0xff805000 - 0xff806000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff800000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff801000> Size <0x1000> Irq <-1>
+PPM 11 pages_tbl [Mapping Region <0x20f00000 - 0x20f01000> -> <0xff806000 - 0xff807000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff802000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff803000> Size <0x1000> Irq <-1>
+Mapping Region <0x90f00000 - 0x90f01000> -> <0xff807000 - 0xff808000>
+Mapping Region <0x50f00000 - 0x50f01000> -> <0xff808000 - 0xff809000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff804000> Size <0x1000> Irq <-1>
+Mapping Region <0x10f00000 - 0x10f01000> -> <0xff809000 - 0xff80a000>
+Mapping Region <0x80f00000 - 0x80f01000> -> <0xff80a000 - 0xff80b000>
+Mapping Region <0xd0f00000 - 0xd0f01000> -> <0xff80b000 - 0xff80c000>
+Mapping Region <0xf00000 - 0xf01000> -> <0xff80c000 - 0xff80d000>
+Mapping Region <0xc0f00000 - 0xc0f01000> -> <0xff80d000 - 0xff80e000>
+Mapping Region <0x40f00000 - 0x40f01000> -> <0xff80e000 - 0xff80f000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff805000> Size <0x1000> Irq <-1>
+1, Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff806000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff807000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff808000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff809000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80a000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80b000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80c000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80d000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80e000> Size <0x1000> Irq <-1>
+2, 2, 0, 2, 1, 1, 1, 2, 4, ]
+Mapping Region <0xb0f00000 - 0xb0f01000> -> <0xff80f000 - 0xff810000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff80f000> Size <0x1000> Irq <-1>
+Mapping Region <0xbfd00000 - 0xbff00000> -> <0xff810000 - 0xffa10000>
+Found Device: FB (Frame Buffer Controler)
+Base <0xff810000> Size <0x200000> Irq <-1>
+Mapping Region <0xbff10000 - 0xbff11000> -> <0xffa10000 - 0xffa11000>
+Found Device: BLKDEV (H.D.D Controler)
+Base <0xffa10000> Size <0x20> Irq <0>
+Mapping Region <0xbff20000 - 0xbff21000> -> <0xffa11000 - 0xffa12000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa11000> Size <0x10> Irq <2>
+Mapping Region <0xbff20010 - 0xbff21010> -> <0xffa12000 - 0xffa13000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa12010> Size <0x10> Irq <3>
+Mapping Region <0xbff20020 - 0xbff21020> -> <0xffa13000 - 0xffa14000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa13020> Size <0x10> Irq <4>
+Mapping Region <0xbff20030 - 0xbff21030> -> <0xffa14000 - 0xffa15000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa14030> Size <0x10> Irq <5>
+Mapping Region <0xbff30000 - 0xbff31000> -> <0xffa15000 - 0xffa16000>
+Found Device: DMA (DMA Channel)
+Base <0xffa15000> Size <0x14> Irq <1>
+All clusters have been Initialized [ 2036047 ]
+
+           ____        ___        ___       ___    _______    ________     
+          /    \      |   |      |   \     /   |  /  ___  \  /  ____  |   
+         /  __  \      | |        |   \___/   |  |  /   \  | | /    |_/   
+        /  /  \  \     | |        |  _     _  |  | |     | | | |______     
+       /  /____\  \    | |        | | \   / | |  | |     | | \______  \ 
+      /   ______   \   | |     _  | |  \_/  | |  | |     | |  _     | |    
+     /   /      \   \  | |____/ | | |       | |  |  \___/  | | \____/ |  
+    /_____/    \_____\|_________/|___|     |___|  \_______/  |________/   
+
+
+		 Advanced Locality Management Operating System
+		   UPMC/LIP6/SoC (12 August 2012 - 22:25:48)
+
+
+INFO: Building Distributed Quaternary Decision Tree (DQDT)
+INFO: DQDT has been built [546130]
+INFO: kernel replication started on cid 11 [2617173]
+INFO: kernel replication started on cid 15 [2617208]
+INFO: kernel replication started on cid 10 [2617270]
+INFO: kernel replication started on cid 6 [2617379]
+INFO: kernel replication started on cid 9 [2617316]
+INFO: kernel replication started on cid 3 [2617295]
+INFO: kernel replication started on cid 7 [2617229]
+INFO: kernel replication started on cid 13 [2617404]
+INFO: kernel replication started on cid 14 [2617357]
+INFO: kernel replication started on cid 12 [2617469]
+INFO: kernel replication started on cid 2 [2617424]
+INFO: kernel replication started on cid 1 [2617529]
+INFO: kernel replication started on cid 5 [2617446]
+INFO: kernel replication started on cid 8 [2617340]
+INFO: kernel replication started on cid 0 [2617633]
+INFO: kernel replication started on cid 4 [2617549]
+INFO: kernel replication done on cid 11 [4246]
+INFO: kernel replication done on cid 15 [783945]
+INFO: kernel replication done on cid 7 [783928]
+INFO: kernel replication done on cid 13 [799386]
+INFO: kernel replication done on cid 5 [820587]
+INFO: kernel replication done on cid 14 [1560668]
+INFO: kernel replication done on cid 3 [1561140]
+INFO: kernel replication done on cid 6 [1561634]
+INFO: kernel replication done on cid 2 [1570049]
+INFO: kernel replication done on cid 10 [1570495]
+INFO: kernel replication done on cid 12 [1579998]
+INFO: kernel replication done on cid 8 [1585472]
+INFO: kernel replication done on cid 9 [1585513]
+INFO: kernel replication done on cid 4 [1597661]
+INFO: kernel replication done on cid 1 [1599813]
+INFO: kernel replication done on cid 0 [1607798]
+INFO: Starting Thread Idle (800ed000)	OK
+INFO: Starting Thread Idle (800ea000)	OK
+INFO: Starting Thread Idle (800ec000)	OK
+INFO: Starting Thread Idle (800eb000)	OK
+INFO: Starting Thread Idle (8bfcc000)	OK
+INFO: Starting Thread Idle (83bcc000)	OK
+INFO: Starting Thread Idle (86bcf000)	OK
+INFO: Starting Thread Idle (8bfce000)	OK
+INFO: Starting Thread Idle (8bfcd000)	OK
+INFO: Starting Thread Idle (86bce000)	OK
+INFO: Starting Thread Idle (83bcd000)	OK
+INFO: Starting Thread Idle (8bfcb000)	OK
+INFO: Starting Thread Idle (83bcb000)	OK
+INFO: Starting Thread Idle (86bcc000)	OK
+INFO: Starting Thread Idle (83bce000)	OK
+INFO: Starting Thread Idle (88fcc000)	OK
+INFO: Starting Thread Idle (86bcd000)	OK
+INFO: Starting Thread Idle (8b3ce000)	OK
+INFO: Starting Thread Idle (88fcd000)	OK
+INFO: Starting Thread Idle (85fcc000)	OK
+INFO: Starting Thread Idle (8b3cc000)	OK
+INFO: Starting Thread Idle (88fce000)	OK
+INFO: Starting Thread Idle (88fcb000)	OK
+INFO: Starting Thread Idle (82fcc000)	OK
+INFO: Starting Thread Idle (8b3cd000)	OK
+INFO: Starting Thread Idle (82fcd000)	OK
+INFO: Starting Thread Idle (8b3cb000)	OK
+INFO: Starting Thread Idle (82fcb000)	OK
+INFO: Starting Thread Idle (85fce000)	OK
+INFO: Starting Thread Idle (883cb000)	OK
+INFO: Starting Thread Idle (883ce000)	OK
+INFO: Starting Thread Idle (82fce000)	OK
+INFO: Starting Thread Idle (8a7cc000)	OK
+INFO: Starting Thread Idle (8a7cd000)	OK
+INFO: Starting Thread Idle (883cd000)	OK
+INFO: Starting Thread Idle (8a7cb000)	OK
+INFO: Starting Thread Idle (8a7ce000)	OK
+INFO: Starting Thread Idle (823cb000)	OK
+INFO: Starting Thread Idle (85fcd000)	OK
+INFO: Starting Thread Idle (85fcb000)	OK
+INFO: Starting Thread Idle (853ce000)	OK
+INFO: Starting Thread Idle (823cc000)	OK
+INFO: Starting Thread Idle (853cb000)	OK
+INFO: Starting Thread Idle (877cb000)	OK
+INFO: Starting Thread Idle (853cd000)	OK
+INFO: Starting Thread Idle (89bcd000)	OK
+INFO: Starting Thread Idle (877cc000)	OK
+INFO: Starting Thread Idle (89bcb000)	OK
+INFO: Starting Thread Idle (877cd000)	OK
+INFO: Starting Thread Idle (89bcc000)	OK
+INFO: Starting Thread Idle (847cd000)	OK
+INFO: Starting Thread Idle (817cc000)	OK
+INFO: Starting Thread Idle (817cd000)	OK
+INFO: Starting Thread Idle (877ce000)	OK
+INFO: Starting Thread Idle (883cc000)	OK
+INFO: Starting Thread Idle (853cc000)	OK
+INFO: Starting Thread Idle (817cb000)	OK
+INFO: Starting Thread Idle (847cc000)	OK
+INFO: Starting Thread Idle (823ce000)	OK
+INFO: Starting Thread Idle (823cd000)	OK
+INFO: Starting Thread Idle (89bce000)	OK
+INFO: Starting Thread Idle (847cb000)	OK
+INFO: Starting Thread Idle (817ce000)	OK
+INFO: Starting Thread Idle (847ce000)	OK
+INFO: kvfsd has been created
+INFO: cpu 61, DQDT update ended [ 4355188 - 5490 ]
+cpu 61, cid 15, level 4, index 0, Indicators Summary:
+   M 11315, T 0, U 0
+   Pages_tbl [1, 3, INFO: Starting KVFSD on CPU 44 [ 4593811 ]
+3, 2, 3, 1, 7, 4, 8, 16, ]
+INFO: Virtual File System (VFS) Is Ready
+INFO: Loading Init Process [ /bin/init ]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [INIT, size 146565]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [INIT, size 146565]
+INFO: sys_signal: handler @413c has been registred for signal 15
+INFO: sys_signal: handler @413c has been registred for signal 1
+sys_fork: new task will be placed on cluster 0, cpu 1 [0]
+sys_fork: cpu 0, pid 1, done [s:5875845, bR:5891767, aR:9571833, e:9573153, t:3697308]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [SH, size 150105]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [SH, size 150105]
+INFO: pthread_destroy: pid 2, tid 0 (817a7000), cluster 0, cpu 1, tm 3208 [ 24, 0, 0, 0, 0, 3 ][13500687]
+sys_fork: new task will be placed on cluster 4, cpu 0 [0]
+INFO: System Current TimeStamp 14607156
+sys_fork: cpu 1, pid 2, done [s:14296055, bR:14311336, aR:18005557, e:18006873, t:3710818]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [DWC, size 148391]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [DWC, size 148391]
+INFO: pthread_destroy: pid 3, tid 0 (847da000), cluster 4, cpu 0, tm 2647 [ 29, 0, 0, 0, 0, 4 ][21945120]
+INFO: System Current TimeStamp 24624360
+INFO: do_thread_create: tid 83cd4000, pid 3, order 0, flags 40, cluster 4, cpu 1 [ m 4088, c 7538, a 3619028, l 724, s 620, e 3631998 ][26785773]
+INFO: do_thread_create: tid 83cd6000, pid 3, order 2, flags 40, cluster 4, cpu 2 [ m 4352, c 7574, a 180, l 534, s 308, e 12948 ][26842452]
+INFO: do_thread_create: tid 83cd8000, pid 3, order 3, flags 40, cluster 4, cpu 3 [ m 6071, c 9362, a 221, l 657, s 700, e 17011 ][26890114]
+INFO: do_thread_create: tid 80cd4000, pid 3, order 4, flags 40, cluster 0, cpu 2 [ m 5293, c 6794, a 239, l 943, s 420, e 13689 ][26937246]
+INFO: do_thread_create: tid 80cd9000, pid 3, order 5, flags 40, cluster 0, cpu 3 [ m 6863, c 8581, a 226, l 880, s 596, e 17146 ][26986870]
+INFO: do_thread_create: tid 823d5000, pid 3, order 6, flags 40, cluster 1, cpu 0 [ m 11253, c 6136, a 207, l 926, s 367, e 18889 ][27039324]
+INFO: do_thread_create: tid 823d7000, pid 3, order 7, flags 40, cluster 1, cpu 1 [ m 5196, c 6961, a 249, l 855, s 309, e 13570 ][27084236]
+INFO: do_thread_create: tid 823dc000, pid 3, order 8, flags 40, cluster 1, cpu 2 [ m 5355, c 7539, a 224, l 919, s 378, e 14415 ][27131779]
+INFO: do_thread_create: tid 823de000, pid 3, order 9, flags 40, cluster 1, cpu 3 [ m 6966, c 9165, a 220, l 979, s 650, e 17980 ][27181814]
+INFO: do_thread_create: tid 853d5000, pid 3, order 10, flags 40, cluster 5, cpu 0 [ m 11092, c 6171, a 195, l 820, s 413, e 18691 ][27233808]
+INFO: do_thread_create: tid 853d7000, pid 3, order 11, flags 40, cluster 5, cpu 1 [ m 5340, c 6974, a 240, l 802, s 314, e 13670 ][27277785]
+INFO: do_thread_create: tid 853da000, pid 3, order 12, flags 40, cluster 5, cpu 2 [ m 6712, c 9087, a 197, l 861, s 668, e 17525 ][27327774]
+INFO: do_thread_create: tid 853dc000, pid 3, order 13, flags 40, cluster 5, cpu 3 [ m 5455, c 7671, a 244, l 815, s 403, e 14588 ][27373252]
+INFO: do_thread_create: tid 877d5000, pid 3, order 14, flags 40, cluster 8, cpu 0 [ m 11619, c 6246, a 195, l 827, s 414, e 19301 ][27427877]
+INFO: do_thread_create: tid 877d7000, pid 3, order 15, flags 40, cluster 8, cpu 1 [ m 7026, c 8373, a 263, l 876, s 400, e 16938 ][27479273]
+INFO: do_thread_create: tid 877dc000, pid 3, order 16, flags 40, cluster 8, cpu 2 [ m 5740, c 7484, a 203, l 794, s 435, e 14656 ][27529005]
+INFO: do_thread_create: tid 877de000, pid 3, order 17, flags 40, cluster 8, cpu 3 [ m 5841, c 7455, a 236, l 794, s 412, e 14738 ][27577727]
+INFO: do_thread_create: tid 89bd5000, pid 3, order 18, flags 40, cluster 12, cpu 0 [ m 12205, c 6227, a 208, l 923, s 429, e 19992 ][27634912]
+INFO: do_thread_create: tid 89bd7000, pid 3, order 19, flags 40, cluster 12, cpu 1 [ m 6321, c 6784, a 249, l 844, s 313, e 14511 ][27686387]
+INFO: do_thread_create: tid 89bda000, pid 3, order 20, flags 40, cluster 12, cpu 2 [ m 7977, c 9156, a 287, l 956, s 667, e 19043 ][27742298]
+INFO: do_thread_create: tid 89bdc000, pid 3, order 21, flags 40, cluster 12, cpu 3 [ m 6431, c 7480, a 256, l 878, s 406, e 15451 ][27793840]
+INFO: do_thread_create: tid 883d5000, pid 3, order 22, flags 40, cluster 9, cpu 0 [ m 12143, c 6354, a 195, l 909, s 430, e 20031 ][27849235]
+INFO: do_thread_create: tid 883d7000, pid 3, order 23, flags 40, cluster 9, cpu 1 [ m 7543, c 8104, a 251, l 1002, s 491, e 17391 ][27902003]
+INFO: do_thread_create: tid 883dc000, pid 3, order 24, flags 40, cluster 9, cpu 2 [ m 6519, c 7506, a 201, l 978, s 407, e 15611 ][27952745]
+INFO: do_thread_create: tid 883de000, pid 3, order 25, flags 40, cluster 9, cpu 3 [ m 6443, c 7137, a 239, l 921, s 412, e 15152 ][28002800]
+INFO: do_thread_create: tid 8a7d5000, pid 3, order 26, flags 40, cluster 13, cpu 0 [ m 12685, c 6304, a 207, l 973, s 496, e 20665 ][28058392]
+INFO: do_thread_create: tid 8a7d7000, pid 3, order 27, flags 40, cluster 13, cpu 1 [ m 8280, c 8420, a 208, l 1020, s 470, e 18398 ][28114391]
+INFO: do_thread_create: tid 8a7da000, pid 3, order 28, flags 40, cluster 13, cpu 2 [ m 6941, c 7271, a 209, l 910, s 414, e 15745 ][28167965]
+INFO: do_thread_create: tid 8a7dd000, pid 3, order 29, flags 40, cluster 13, cpu 3 [ m 7050, c 7574, a 254, l 977, s 331, e 16186 ][28221105]
+INFO: do_thread_create: tid 82fd5000, pid 3, order 30, flags 40, cluster 2, cpu 0 [ m 13226, c 6282, a 209, l 1072, s 413, e 21202 ][28281476]
+INFO: do_thread_create: tid 82fd7000, pid 3, order 31, flags 40, cluster 2, cpu 1 [ m 7452, c 6763, a 252, l 892, s 303, e 15662 ][28335872]
+INFO: do_thread_create: tid 82fdc000, pid 3, order 32, flags 40, cluster 2, cpu 2 [ m 8827, c 9092, a 283, l 1017, s 631, e 19850 ][28395327]
+INFO: do_thread_create: tid 82fde000, pid 3, order 33, flags 40, cluster 2, cpu 3 [ m 7545, c 7346, a 261, l 1000, s 431, e 16583 ][28450594]
+INFO: do_thread_create: tid 85fd5000, pid 3, order 34, flags 40, cluster 6, cpu 0 [ m 13306, c 6211, a 195, l 889, s 412, e 21013 ][28510127]
+INFO: do_thread_create: tid 85fd8000, pid 3, order 35, flags 40, cluster 6, cpu 1 [ m 8690, c 9076, a 256, l 914, s 658, e 19594 ][28570089]
+INFO: do_thread_create: tid 85fdb000, pid 3, order 36, flags 40, cluster 6, cpu 2 [ m 7317, c 6952, a 196, l 874, s 339, e 15678 ][28624663]
+INFO: do_thread_create: tid 85fdd000, pid 3, order 37, flags 40, cluster 6, cpu 3 [ m 7469, c 6884, a 245, l 834, s 353, e 15785 ][28690238]
+INFO: do_thread_create: tid 83bd5000, pid 3, order 38, flags 40, cluster 3, cpu 0 [ m 14138, c 6201, a 209, l 1056, s 412, e 22016 ][28750632]
+INFO: do_thread_create: tid 83bd7000, pid 3, order 39, flags 40, cluster 3, cpu 1 [ m 9328, c 8081, a 263, l 1080, s 507, e 19259 ][28809419]
+INFO: do_thread_create: tid 83bdc000, pid 3, order 40, flags 40, cluster 3, cpu 2 [ m 8283, c 7569, a 209, l 976, s 424, e 17461 ][28866606]
+INFO: do_thread_create: tid 83bde000, pid 3, order 41, flags 40, cluster 3, cpu 3 [ m 8345, c 7166, a 251, l 1004, s 411, e 17177 ][28923200]
+INFO: do_thread_create: tid 86bd6000, pid 3, order 42, flags 40, cluster 7, cpu 0 [ m 13608, c 6604, a 195, l 999, s 450, e 21856 ][28983917]
+INFO: do_thread_create: tid 86bd8000, pid 3, order 43, flags 40, cluster 7, cpu 1 [ m 8332, c 7494, a 237, l 911, s 374, e 17348 ][29039354]
+INFO: do_thread_create: tid 86bdb000, pid 3, order 44, flags 40, cluster 7, cpu 2 [ m 8073, c 7031, a 200, l 935, s 336, e 16575 ][29094729]
+INFO: do_thread_create: tid 86bde000, pid 3, order 45, flags 40, cluster 7, cpu 3 [ m 9241, c 8785, a 182, l 990, s 618, e 19816 ][29152687]
+INFO: do_thread_create: tid 88fd5000, pid 3, order 46, flags 40, cluster 10, cpu 0 [ m 14365, c 6217, a 195, l 962, s 411, e 22150 ][29216191]
+INFO: do_thread_create: tid 88fd7000, pid 3, order 47, flags 40, cluster 10, cpu 1 [ m 8296, c 6738, a 237, l 941, s 307, e 16519 ][29273810]
+INFO: do_thread_create: tid 88fdc000, pid 3, order 48, flags 40, cluster 10, cpu 2 [ m 9312, c 8549, a 239, l 1017, s 591, e 19708 ][29335068]
+INFO: do_thread_create: tid 88fde000, pid 3, order 49, flags 40, cluster 10, cpu 3 [ m 8516, c 7268, a 236, l 933, s 409, e 17362 ][29393185]
+INFO: do_thread_create: tid 8b3d5000, pid 3, order 50, flags 40, cluster 14, cpu 0 [ m 14953, c 6367, a 226, l 1093, s 527, e 23166 ][29458095]
+INFO: do_thread_create: tid 8b3d7000, pid 3, order 51, flags 40, cluster 14, cpu 1 [ m 8901, c 6772, a 249, l 1031, s 311, e 17264 ][29521877]
+INFO: do_thread_create: tid 8b3da000, pid 3, order 52, flags 40, cluster 14, cpu 2 [ m 9100, c 7227, a 211, l 983, s 408, e 17929 ][29583780]
+INFO: do_thread_create: tid 8b3dc000, pid 3, order 53, flags 40, cluster 14, cpu 3 [ m 10139, c 8762, a 262, l 1097, s 553, e 20813 ][29648255]
+INFO: do_thread_create: tid 80bd6000, pid 3, order 54, flags 40, cluster 11, cpu 0 [ m 8620, c 7172, a 181, l 1092, s 406, e 17471 ][29709080]
+INFO: do_thread_create: tid 80bd8000, pid 3, order 55, flags 40, cluster 11, cpu 1 [ m 9083, c 7380, a 149, l 981, s 339, e 17932 ][29765588]
+INFO: do_thread_create: tid 80bdd000, pid 3, order 56, flags 40, cluster 11, cpu 2 [ m 9331, c 6922, a 154, l 1034, s 333, e 17774 ][29822260]
+INFO: do_thread_create: tid 80bdf000, pid 3, order 57, flags 40, cluster 11, cpu 3 [ m 9217, c 6804, a 146, l 1024, s 271, e 17462 ][29878430]
+INFO: do_thread_create: tid 8bfd5000, pid 3, order 58, flags 40, cluster 15, cpu 0 [ m 15508, c 6317, a 213, l 1116, s 520, e 23674 ][29942862]
+INFO: do_thread_create: tid 8bfd7000, pid 3, order 59, flags 40, cluster 15, cpu 1 [ m 10793, c 7866, a 196, l 1103, s 405, e 20363 ][30006708]
+INFO: do_thread_create: tid 8bfda000, pid 3, order 60, flags 40, cluster 15, cpu 2 [ m 9732, c 7267, a 209, l 1097, s 401, e 18706 ][30070354]
+INFO: do_thread_create: tid 8bfdc000, pid 3, order 61, flags 40, cluster 15, cpu 3 [ m 9858, c 7570, a 250, l 1084, s 434, e 19196 ][30133461]
+INFO: do_thread_create: tid 83cd1000, pid 3, order 62, flags 40, cluster 4, cpu 1 [ m 8424, c 7101, a 188, l 660, s 399, e 16772 ][30193905]
+INFO: do_thread_create: tid 80cf3000, pid 3, order 63, flags 40, cluster 0, cpu 0 [ m 11196, c 9091, a 299, l 959, s 741, e 22286 ][30266861]
+INFO: pthread_destroy: pid 3, tid 0 (83cd4000), cluster 4, cpu 1, tm 3276 [ 4, 0, 0, 0, 0, 0 ][30298226]
+INFO: pthread_destroy: pid 3, tid 2 (83cd6000), cluster 4, cpu 2, tm 3404 [ 1, 0, 0, 0, 0, 0 ][30301132]
+INFO: pthread_destroy: pid 3, tid 3 (83cd8000), cluster 4, cpu 3, tm 4620 [ 1, 0, 0, 0, 0, 0 ][30305755]
+INFO: pthread_destroy: pid 3, tid 4 (80cd4000), cluster 0, cpu 2, tm 3913 [ 1, 0, 0, 0, 0, 0 ][30308349]
+INFO: pthread_destroy: pid 3, tid 5 (80cd9000), cluster 0, cpu 3, tm 6956 [ 1, 0, 0, 0, 0, 0 ][30312415]
+INFO: pthread_destroy: pid 3, tid 6 (823d5000), cluster 1, cpu 0, tm 4213 [ 1, 0, 0, 0, 0, 0 ][30314235]
+INFO: pthread_destroy: pid 3, tid 7 (823d7000), cluster 1, cpu 1, tm 4388 [ 1, 0, 0, 0, 0, 0 ][30317390]
+INFO: pthread_destroy: pid 3, tid 8 (823dc000), cluster 1, cpu 2, tm 5344 [ 1, 0, 0, 0, 0, 0 ][30323151]
+INFO: pthread_destroy: pid 3, tid 9 (823de000), cluster 1, cpu 3, tm 8014 [ 1, 0, 0, 0, 0, 0 ][30326738]
+INFO: pthread_destroy: pid 3, tid 10 (853d5000), cluster 5, cpu 0, tm 6343 [ 1, 0, 0, 0, 0, 0 ][30328872]
+INFO: pthread_destroy: pid 3, tid 11 (853d7000), cluster 5, cpu 1, tm 4292 [ 1, 0, 0, 0, 0, 0 ][30330253]
+INFO: pthread_destroy: pid 3, tid 12 (853da000), cluster 5, cpu 2, tm 5389 [ 2, 0, 0, 0, 0, 0 ][30333099]
+INFO: pthread_destroy: pid 3, tid 13 (853dc000), cluster 5, cpu 3, tm 3346 [ 2, 0, 0, 0, 0, 0 ][30335569]
+INFO: pthread_destroy: pid 3, tid 14 (877d5000), cluster 8, cpu 0, tm 4574 [ 1, 0, 0, 0, 0, 0 ][30338396]
+INFO: pthread_destroy: pid 3, tid 15 (877d7000), cluster 8, cpu 1, tm 5238 [ 1, 0, 0, 0, 0, 0 ][30342532]
+INFO: pthread_destroy: pid 3, tid 16 (877dc000), cluster 8, cpu 2, tm 3735 [ 1, 0, 0, 0, 0, 1 ][30344550]
+INFO: pthread_destroy: pid 3, tid 17 (877de000), cluster 8, cpu 3, tm 3512 [ 1, 0, 0, 0, 0, 0 ][30348034]
+INFO: pthread_destroy: pid 3, tid 18 (89bd5000), cluster 12, cpu 0, tm 4433 [ 1, 0, 0, 0, 0, 0 ][30350912]
+INFO: pthread_destroy: pid 3, tid 19 (89bd7000), cluster 12, cpu 1, tm 3957 [ 1, 0, 0, 0, 0, 0 ][30354003]
+INFO: pthread_destroy: pid 3, tid 20 (89bda000), cluster 12, cpu 2, tm 5772 [ 1, 0, 0, 0, 0, 0 ][30357954]
+INFO: pthread_destroy: pid 3, tid 21 (89bdc000), cluster 12, cpu 3, tm 3580 [ 1, 0, 0, 0, 0, 0 ][30360755]
+INFO: pthread_destroy: pid 3, tid 22 (883d5000), cluster 9, cpu 0, tm 4235 [ 1, 0, 0, 0, 0, 0 ][30363591]
+INFO: pthread_destroy: pid 3, tid 23 (883d7000), cluster 9, cpu 1, tm 4956 [ 1, 0, 0, 0, 0, 0 ][30366063]
+INFO: pthread_destroy: pid 3, tid 24 (883dc000), cluster 9, cpu 2, tm 5130 [ 1, 0, 0, 0, 0, 0 ][30371105]
+INFO: pthread_destroy: pid 3, tid 25 (883de000), cluster 9, cpu 3, tm 4589 [ 1, 0, 0, 0, 0, 0 ][30374266]
+INFO: pthread_destroy: pid 3, tid 26 (8a7d5000), cluster 13, cpu 0, tm 4467 [ 1, 0, 0, 0, 0, 0 ][30377491]
+INFO: pthread_destroy: pid 3, tid 27 (8a7d7000), cluster 13, cpu 1, tm 5627 [ 1, 0, 0, 0, 0, 0 ][30381421]
+INFO: pthread_destroy: pid 3, tid 28 (8a7da000), cluster 13, cpu 2, tm 3599 [ 2, 0, 0, 0, 0, 0 ][30384350]
+INFO: pthread_destroy: pid 3, tid 29 (8a7dd000), cluster 13, cpu 3, tm 4207 [ 1, 0, 0, 0, 0, 0 ][30387583]
+INFO: pthread_destroy: pid 3, tid 30 (82fd5000), cluster 2, cpu 0, tm 5351 [ 1, 0, 0, 0, 0, 0 ][30390777]
+INFO: pthread_destroy: pid 3, tid 31 (82fd7000), cluster 2, cpu 1, tm 4096 [ 1, 0, 0, 0, 0, 0 ][30394371]
+INFO: pthread_destroy: pid 3, tid 32 (82fdc000), cluster 2, cpu 2, tm 6391 [ 1, 0, 0, 0, 0, 0 ][30398253]
+INFO: pthread_destroy: pid 3, tid 33 (82fde000), cluster 2, cpu 3, tm 4084 [ 1, 0, 0, 0, 0, 1 ][30400333]
+INFO: pthread_destroy: pid 3, tid 34 (85fd5000), cluster 6, cpu 0, tm 3406 [ 2, 0, 0, 0, 0, 0 ][30403127]
+INFO: pthread_destroy: pid 3, tid 35 (85fd8000), cluster 6, cpu 1, tm 5258 [ 1, 0, 0, 0, 0, 0 ][30407273]
+INFO: pthread_destroy: pid 3, tid 36 (85fdb000), cluster 6, cpu 2, tm 4313 [ 1, 0, 0, 0, 0, 0 ][30409833]
+INFO: pthread_destroy: pid 3, tid 37 (85fdd000), cluster 6, cpu 3, tm 4048 [ 1, 0, 0, 0, 0, 0 ][30412773]
+INFO: pthread_destroy: pid 3, tid 38 (83bd5000), cluster 3, cpu 0, tm 3856 [ 1, 0, 0, 0, 0, 0 ][30416267]
+INFO: pthread_destroy: pid 3, tid 39 (83bd7000), cluster 3, cpu 1, tm 4953 [ 1, 0, 0, 0, 0, 0 ][30420210]
+INFO: pthread_destroy: pid 3, tid 40 (83bdc000), cluster 3, cpu 2, tm 5915 [ 1, 0, 0, 0, 0, 0 ][30425537]
+INFO: pthread_destroy: pid 3, tid 42 (86bd6000), cluster 7, cpu 0, tm 5070 [ 1, 0, 0, 0, 0, 0 ][30429019]
+INFO: pthread_destroy: pid 3, tid 41 (83bde000), cluster 3, cpu 3, tm 9195 [ 1, 0, 0, 0, 0, 1 ][30431995]
+INFO: pthread_destroy: pid 3, tid 43 (86bd8000), cluster 7, cpu 1, tm 5926 [ 1, 0, 0, 0, 0, 1 ][30435124]
+INFO: pthread_destroy: pid 3, tid 44 (86bdb000), cluster 7, cpu 2, tm 7173 [ 2, 0, 0, 0, 0, 0 ][30439073]
+INFO: pthread_destroy: pid 3, tid 45 (86bde000), cluster 7, cpu 3, tm 7668 [ 1, 0, 0, 0, 0, 0 ][30440971]
+INFO: pthread_destroy: pid 3, tid 46 (88fd5000), cluster 10, cpu 0, tm 6771 [ 1, 0, 0, 0, 0, 0 ][30443609]
+INFO: pthread_destroy: pid 3, tid 47 (88fd7000), cluster 10, cpu 1, tm 6415 [ 1, 0, 0, 0, 0, 0 ][30446816]
+INFO: pthread_destroy: pid 3, tid 48 (88fdc000), cluster 10, cpu 2, tm 4517 [ 1, 0, 0, 0, 0, 0 ][30450216]
+INFO: pthread_destroy: pid 3, tid 49 (88fde000), cluster 10, cpu 3, tm 4763 [ 1, 0, 0, 0, 0, 0 ][30456052]
+INFO: pthread_destroy: pid 3, tid 50 (8b3d5000), cluster 14, cpu 0, tm 7052 [ 1, 0, 0, 0, 0, 0 ][30459779]
+INFO: pthread_destroy: pid 3, tid 51 (8b3d7000), cluster 14, cpu 1, tm 7010 [ 1, 0, 0, 0, 0, 0 ][30462911]
+INFO: pthread_destroy: pid 3, tid 52 (8b3da000), cluster 14, cpu 2, tm 4082 [ 1, 0, 0, 0, 0, 0 ][30465920]
+INFO: pthread_destroy: pid 3, tid 54 (80bd6000), cluster 11, cpu 0, tm 4689 [ 1, 0, 0, 0, 0, 0 ][30469088]
+INFO: pthread_destroy: pid 3, tid 53 (8b3dc000), cluster 14, cpu 3, tm 12484 [ 1, 0, 0, 0, 0, 0 ][30474277]
+INFO: pthread_destroy: pid 3, tid 55 (80bd8000), cluster 11, cpu 1, tm 7836 [ 1, 0, 0, 0, 0, 0 ][30477535]
+INFO: pthread_destroy: pid 3, tid 57 (80bdf000), cluster 11, cpu 3, tm 5778 [ 1, 0, 0, 0, 0, 0 ][30481010]
+INFO: pthread_destroy: pid 3, tid 58 (8bfd5000), cluster 15, cpu 0, tm 5509 [ 1, 0, 0, 0, 0, 0 ][30484441]
+INFO: pthread_destroy: pid 3, tid 56 (80bdd000), cluster 11, cpu 2, tm 14226 [ 1, 0, 0, 0, 0, 0 ][30486251]
+INFO: pthread_destroy: pid 3, tid 59 (8bfd7000), cluster 15, cpu 1, tm 7448 [ 1, 0, 0, 0, 0, 0 ][30489331]
+INFO: pthread_destroy: pid 3, tid 60 (8bfda000), cluster 15, cpu 2, tm 5921 [ 1, 0, 0, 0, 0, 0 ][30492019]
+INFO: pthread_destroy: pid 3, tid 62 (83cd1000), cluster 4, cpu 1, tm 2237 [ 1, 0, 0, 0, 0, 0 ][30493567]
+INFO: pthread_destroy: pid 3, tid 61 (8bfdc000), cluster 15, cpu 3, tm 5049 [ 1, 0, 0, 0, 0, 0 ][30496310]
+INFO: pthread_destroy: pid 3, tid 63 (80cf3000), cluster 0, cpu 0, tm 4527 [ 1, 0, 0, 0, 0, 0 ][30502524]
+INFO: Thread 847b4000 has released FPU on CPU 16
