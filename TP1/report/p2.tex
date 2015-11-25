@@ -38,3 +38,6 @@ Le but de cette expérience est d'évaluer les temps d'exécution obtenus grace 
 \textbf{- sim16 :} Configuration avec 16 clusters, 64 processeurs.\\
 \textbf{- sim64 :} Configuration avec 64 clusters, dont on pourra pas évaluer les résultats car le traitement ne s'est jamais lancé ( après une semaine d'attente ), en plus du fait que ça renvoyait des erreurs de défauts mémoire.\\
 Pour chaque configuration on lancera à chaque fois une exécution avec un nombre exponentiellement variant de mots : 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192 et 16384.\\
+L'expérience est faite via le script fournis : \textbf{./ExecMe.sh}\\
+Ce Script doit se trouver à la racine d'almos, il compilera l'application DWC puis lancera les différentes configurations de simulation avec les différentes configurations de clusters et nombre de mots, comme décrit plus haut.\\
+Les résultats des calculs seront sauvegardés et rangés par dossiers de la forme : logs.<nb\_clusters>/tty1.<nb\_clusters>.<nb\_words>
