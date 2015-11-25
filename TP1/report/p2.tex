@@ -1,1 +1,40 @@
-\paragraph{Description du code implémenté :}
+\paragraph{Description du code implémenté}:\\
+
+Contenus dans \textbf{./apps/dwc/} les sources du code de DWC se distinguent en 3 parties :\\
+
+\textbf{words\_generator.c/.h :} Un générateur de mots aléatoires, dont la fonction d'entrée 
+\begin{lstlisting}[language=C]
+char** random_text_generator(int nbWords, int maxWordSize);
+\end{lstlisting}
+prend en paramètre le nombre de mots à générer et la taille maximale que peut prend un mot, elle retournera un tableau de nbWords mots de tailles entre 0 et maxWordSize.\\
+Ce fichier contient également deux autre fonctions pour désallouer un tableau de mots, et pour l'afficher :
+\begin{lstlisting}[language=C]
+void free_text(char** text, int nbWords);
+void print_text(char** text, int nbWords);
+\end{lstlisting}
+
+\textbf{distributed\_words\_counter.c/.h :} Le coeur de l'application, contenant notament les deux fonctions principales :
+\begin{lstlisting}[language=C]
+struct dwc_bench {
+  clock_t mono_time;  /* temps passe dans la partie sequentielle */
+  clock_t multi_time; /* temps passe dans la partie parallele */
+};
+struct dwc_bench* super_count(char** text, int nbThreads, 
+			      int nbWords, int maxWordSize);
+clock_t mono_count(char** text, int nbWords, int maxWordSize);
+\end{lstlisting}
+Ce sont ces deux fonctions ( les seules publiques dans le .h ) qui seront appellées pour exécuter nos calculs, les deux prennent en paramètre un tableau de mots ( idéalement générés par le words\_generator ), la taille de ce tableau ( le nombre de mots ), et la taille max d'un mot. La différence entre les deux c'est que la première effectue un calcul distribué ( le nombre de threads sera dans ce cas passé en param ) et retourne donc de manière distincte le temps passé dans la partie parallèle et le temps passé dans la partie séquentielle, tandis que la deuxième fonction effectue le calcul de manière séquentielle et ne rend donc qu'une seule durée, celle de tout le traitement.\\
+Le calcul parallèle ce fait à travers l'utilisation de la biliothèque Threads POSIX, où - comme décrit plus haut - chaque threads effectuera son propre calcul sur sa propre plage de données, le processus principal s'occupe donc de la création des Threads et de l'affectation de la plage de données dans le tableau, il attendra ensuite que tous les workers finissent le traitement pour faire la somme des calculs collectés.\\
+Le fichier .c contient d'autres fonctions telles que celles qui gèrent la mémoire et celles qui seront affectés à chaque Thread.
+
+\textbf{main.c :} Point d'entrée principal de l'application, il prend en argument le nombre de mots à traiter, la taille maximale d'un mot est par contre déclarée en dur dans le code ( 32 ), il récupère d'abord le nombre de processeurs, grace à l'appel \textbf{sysconf(\_SC\_NPROCESSORS\_ONLN)}, gènère un tableau de mots aléatoires, et lance les deux calculs : parallèle puis séquentiel. A la fin de son exécution il affiche les durées de calculs retournées par les deux fonctions de comptage.\\
+Le but étant de calculer à chacune des exécutions de ce main les temps de calculs ( séquentiel + distribué ) sur une même portion de nombre de mots, et une même configuration du simulateur. On verra dans le paragraphe suivant qu'on va lancer des benchs sur plusieurs plages de mots différentes, et sur plusieurs configurations du simulateur.
+
+\paragraph{Description de l'expérience}:\\
+
+Le but de cette expérience est d'évaluer les temps d'exécution obtenus grace au code décrit ci-dessus, sur plusieurs plages de mots et plusieurs configuration, on dispose dans almos des 4 configurations suivantes :\\
+\textbf{- sim1  :} Configuration avec un cluster, et donc 4 processeurs.\\
+\textbf{- sim4  :} Configuration avec 4 clusters, 16 processeurs.\\
+\textbf{- sim16 :} Configuration avec 16 clusters, 64 processeurs.\\
+\textbf{- sim64 :} Configuration avec 64 clusters, dont on pourra pas évaluer les résultats car le traitement ne s'est jamais lancé ( après une semaine d'attente ), en plus du fait que ça renvoyait des erreurs de défauts mémoire.\\
+Pour chaque configuration on lancera à chaque fois une exécution avec un nombre exponentiellement variant de mots : 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192 et 16384.\\
