@@ -35,7 +35,11 @@ dans almos-tsar-mipsel-1.0
 \paragraph{Description de l'application}:\\
 
 DWC ( Distributed Words Counter ) est une application de comptage distribué de nombre de mots dans un texte. Le choix de cette application, est motivé par la nécessité d'avoir une application parallèle dont on évaluera la performance ( speedup ). Cette application sera écrite en C, et utilisera l'API POSIX Threads pour exprimer le traitement parallèle, elle suivra le schèma de traitement illustré par la figure :\\
-TOOOOOOOOOOOOOOODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO\\
+
+\begin{center}
+\includegraphics[scale=0.4]{images/processing.png}
+\end{center}
+
 La phase d'initialisation permet de remplir la structure de calcul, représentée dans notre cas par un tableau de mots générés aléatoirement et dont la taille sera définie à l'avance ( parce qu'on veut pouvoir manipuler la taille de mots, histoire de pouvoir évaluer les performances sur plusieurs plages de mots). On lancera ensuite autant de taches ``workers'' qu'il y a de processeurs dans la platforme matérielle, chaque tache ``worker'' aura sa plage de travail dans le tableau de mots, et produira un tableau correspondant au nombre de mots d'indice i du tableau de lettres. ( ainsi array[3] correspondra au nombre de mots de taille 3 ). Dès que les ``workers'' auront fini leur calcul, le main rentrera en phase de merge pour rassembler tous les tableaux de résultats et faire les sommes de nombres de mots.\\
 
 Une exécution de l'application rend le temps de traitement en nombre de cycles par phase du programme. on exécutera le programme, sur les mêmes données et pour la même configuration séquentiellement et de manière distribuée ( pour les benchs ).\\
