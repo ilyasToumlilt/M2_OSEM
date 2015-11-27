@@ -9,12 +9,12 @@ dwc ended
 	2048	Words
 	32	MaxWordSize
 Mono Bench :
-	mono_time=290672.000000
+	mono_time=290723.000000
 	multi_time=0.000000
-	total=290672.000000
+	total=290723.000000
 Multi Bench :
-	mono_time=168594.000000
-	multi_time=235513.000000
-	total=404107.000000
-Speedup ==>0.719295
+	mono_time=168472.000000
+	multi_time=235327.000000
+	total=403799.000000
+Speedup ==>0.719970
 [MainDwc] Finished

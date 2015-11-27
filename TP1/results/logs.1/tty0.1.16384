@@ -96,20 +96,20 @@ INFO: elf_segments_load: Text <0x4000 - 0x10000>
 INFO: Region [4000,10000] has been mapped [DWC, size 148391]
 INFO: elf_segments_load: Data <0x200000 - 0x210000>
 INFO: Region [200000,210000] has been mapped [DWC, size 148391]
-INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2595 [ 29, 0, 0, 0, 0, 4 ][22343013]
-INFO: System Current TimeStamp 26009031
-INFO: System Current TimeStamp 36030537
-INFO: cpu 1, DQDT update ended [ 37038639 - 5762 ]
+INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2555 [ 29, 0, 0, 0, 0, 4 ][22342927]
+INFO: System Current TimeStamp 26008933
+INFO: System Current TimeStamp 36030389
+INFO: cpu 1, DQDT update ended [ 37038617 - 5739 ]
 cpu 1, cid 0, level 4, index 0, Indicators Summary:
    M 7572, T 0, U 25
    Pages_tbl [0, 0, 1, 0, 1, 0, 0, 1, 1, 14, ]
-INFO: System Current TimeStamp 46058692
-INFO: System Current TimeStamp 56077761
-INFO: do_thread_create: tid 81e00000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 11765, c 8880, a 204, l 703, s 755, e 22307 ][56645661]
-INFO: do_thread_create: tid 81e02000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4641, c 8590, a 134, l 612, s 572, e 14549 ][56688408]
-INFO: do_thread_create: tid 81e04000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4697, c 9443, a 157, l 625, s 567, e 15489 ][56731140]
-INFO: pthread_destroy: pid 3, tid 0 (81e00000), cluster 0, cpu 3, tm 4962 [ 1, 0, 0, 0, 0, 1 ][57565249]
-INFO: pthread_destroy: pid 3, tid 2 (81e02000), cluster 0, cpu 0, tm 4296 [ 1, 0, 0, 0, 0, 1 ][57566505]
-INFO: pthread_destroy: pid 3, tid 3 (81e04000), cluster 0, cpu 1, tm 3516 [ 1, 0, 0, 0, 0, 1 ][57597714]
+INFO: System Current TimeStamp 46058849
+INFO: System Current TimeStamp 56078078
+INFO: do_thread_create: tid 81e00000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 11741, c 8850, a 212, l 702, s 764, e 22269 ][56647417]
+INFO: do_thread_create: tid 81e02000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4687, c 8546, a 133, l 650, s 539, e 14555 ][56690742]
+INFO: do_thread_create: tid 81e04000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4751, c 9450, a 139, l 679, s 586, e 15605 ][56733132]
+INFO: pthread_destroy: pid 3, tid 0 (81e00000), cluster 0, cpu 3, tm 4912 [ 1, 0, 0, 0, 0, 1 ][57567849]
+INFO: pthread_destroy: pid 3, tid 2 (81e02000), cluster 0, cpu 0, tm 4011 [ 1, 0, 0, 0, 0, 1 ][57569053]
+INFO: pthread_destroy: pid 3, tid 3 (81e04000), cluster 0, cpu 1, tm 3320 [ 1, 0, 0, 0, 0, 1 ][57600375]
 INFO: Thread 81fba000 has released FPU on CPU 2
-INFO: System Current TimeStamp 66110890
+INFO: System Cu

@@ -96,12 +96,12 @@ INFO: elf_segments_load: Text <0x4000 - 0x10000>
 INFO: Region [4000,10000] has been mapped [DWC, size 148391]
 INFO: elf_segments_load: Data <0x200000 - 0x210000>
 INFO: Region [200000,210000] has been mapped [DWC, size 148391]
-INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2502 [ 29, 0, 0, 0, 0, 4 ][22336464]
-INFO: System Current TimeStamp 26008409
-INFO: do_thread_create: tid 81f34000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 11471, c 7904, a 203, l 695, s 755, e 21028 ][31316461]
-INFO: do_thread_create: tid 81f36000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4673, c 8681, a 115, l 702, s 539, e 14710 ][31358220]
-INFO: do_thread_create: tid 81f38000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 5067, c 9256, a 139, l 666, s 572, e 15700 ][31399069]
-INFO: pthread_destroy: pid 3, tid 0 (81f34000), cluster 0, cpu 3, tm 4366 [ 1, 0, 0, 0, 0, 0 ][31600545]
-INFO: pthread_destroy: pid 3, tid 2 (81f36000), cluster 0, cpu 0, tm 4367 [ 1, 0, 0, 0, 0, 0 ][31601696]
-INFO: pthread_destroy: pid 3, tid 3 (81f38000), cluster 0, cpu 1, tm 3200 [ 1, 0, 0, 0, 0, 0 ][31629789]
+INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2504 [ 29, 0, 0, 0, 0, 4 ][22336416]
+INFO: System Current TimeStamp 26008363
+INFO: do_thread_create: tid 81f34000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 11478, c 7902, a 203, l 707, s 755, e 21045 ][31316445]
+INFO: do_thread_create: tid 81f36000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4717, c 8612, a 116, l 664, s 546, e 14655 ][31358231]
+INFO: do_thread_create: tid 81f38000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 5135, c 9302, a 132, l 652, s 568, e 15789 ][31399116]
+INFO: pthread_destroy: pid 3, tid 0 (81f34000), cluster 0, cpu 3, tm 4451 [ 1, 0, 0, 0, 0, 0 ][31601044]
+INFO: pthread_destroy: pid 3, tid 2 (81f36000), cluster 0, cpu 0, tm 4700 [ 1, 0, 0, 0, 0, 0 ][31602150]
+INFO: pthread_destroy: pid 3, tid 3 (81f38000), cluster 0, cpu 1, tm 3290 [ 1, 0, 0, 0, 0, 0 ][31629557]
 INFO: Thread 81fba000 has released FPU on CPU 2

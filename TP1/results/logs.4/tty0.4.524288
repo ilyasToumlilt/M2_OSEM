@@ -1,0 +1,622 @@
+
+AlmOS Bootloader			[ STARTED ]
+
+Loading Kernel Image			[ OK ]
+Loading Boot Information Block		[ OK ]
+Setup Kernel Boot Information		[ OK ]
+Preparing Kernel's Memory Layout	[ OK ]
+
+Booting AlmOS Kernel ...
+
+Boot Info:
+	Arch Info 80bfe000
+	Text <0x80000000 : 0x80032000>
+	Data <0x80032000 : 0x8003b000>
+	Reserved <0x80bfa000 : 0x80c00000>
+	BSC 2, BSP 8, CPU NR 16, MMU ON
+	Kernel Entry Point @0x8000a1f0
+
+Initialization of 4/4 Online Clusters	[ 247663 ]
+Mapping Region <0x80000000 - 0x80c00000> : <0x80000000 - 0x80c00000>
+Mapping Region <0x0 - 0xc00000> -> <0x80c00000 - 0x81800000>
+Mapping Region <0x40000000 - 0x40c00000> -> <0x81800000 - 0x82400000>
+Mapping Region <0xc0000000 - 0xc0c00000> -> <0x82400000 - 0x83000000>
+PPM 2 [ 3072, 2829, 2263, 424, 141 ]
+PPM 2 pages_tbl [1, 2, 2, 0, 2, 1, 1, 1, 2, 4, ]
+Mapping Region <0xf00000 - 0xf01000> -> <0xff800000 - 0xff801000>
+Mapping Region <0xc0f00000 - 0xc0f01000> -> <0xff801000 - 0xff802000>
+Mapping Region <0x40f00000 - 0x40f01000> -> <0xff802000 - 0xff803000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff800000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff801000> Size <0x1000> Irq <-1>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff802000> Size <0x1000> Irq <-1>
+Mapping Region <0x80f00000 - 0x80f01000> -> <0xff803000 - 0xff804000>
+Found Device: XICU (Interrupt Control Unite With Integrated RT-Timers)
+Base <0xff803000> Size <0x1000> Irq <-1>
+Mapping Region <0xbfd00000 - 0xbff00000> -> <0xff804000 - 0xffa04000>
+Found Device: FB (Frame Buffer Controler)
+Base <0xff804000> Size <0x200000> Irq <-1>
+Mapping Region <0xbff10000 - 0xbff11000> -> <0xffa04000 - 0xffa05000>
+Found Device: BLKDEV (H.D.D Controler)
+Base <0xffa04000> Size <0x20> Irq <0>
+Mapping Region <0xbff20000 - 0xbff21000> -> <0xffa05000 - 0xffa06000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa05000> Size <0x10> Irq <2>
+Mapping Region <0xbff20010 - 0xbff21010> -> <0xffa06000 - 0xffa07000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa06010> Size <0x10> Irq <3>
+Mapping Region <0xbff20020 - 0xbff21020> -> <0xffa07000 - 0xffa08000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa07020> Size <0x10> Irq <4>
+Mapping Region <0xbff20030 - 0xbff21030> -> <0xffa08000 - 0xffa09000>
+Found Device: TTY (Emulated Terminal Controler)
+Base <0xffa08030> Size <0x10> Irq <5>
+Mapping Region <0xbff30000 - 0xbff31000> -> <0xffa09000 - 0xffa0a000>
+Found Device: DMA (DMA Channel)
+Base <0xffa09000> Size <0x14> Irq <1>
+All clusters have been Initialized [ 1731251 ]
+
+           ____        ___        ___       ___    _______    ________     
+          /    \      |   |      |   \     /   |  /  ___  \  /  ____  |   
+         /  __  \      | |        |   \___/   |  |  /   \  | | /    |_/   
+        /  /  \  \     | |        |  _     _  |  | |     | | | |______     
+       /  /____\  \    | |        | | \   / | |  | |     | | \______  \ 
+      /   ______   \   | |     _  | |  \_/  | |  | |     | |  _     | |    
+     /   /      \   \  | |____/ | | |       | |  |  \___/  | | \____/ |  
+    /_____/    \_____\|_________/|___|     |___|  \_______/  |________/   
+
+
+		 Advanced Locality Management Operating System
+		   UPMC/LIP6/SoC (12 August 2012 - 22:25:48)
+
+
+INFO: Building Distributed Quaternary Decision Tree (DQDT)
+INFO: DQDT has been built [528130]
+INFO: kernel replication started on cid 2 [2293599]
+INFO: kernel replication started on cid 3 [2293555]
+INFO: kernel replication started on cid 1 [2293598]
+INFO: kernel replication started on cid 0 [2293575]
+INFO: kernel replication done on cid 2 [2901]
+INFO: kernel replication done on cid 3 [776698]
+INFO: kernel replication done on cid 1 [1546657]
+INFO: kernel replication done on cid 0 [1553771]
+INFO: Starting Thread Idle (800ed000)	OK
+INFO: Starting Thread Idle (800ea000)	OK
+INFO: Starting Thread Idle (800ec000)	OK
+INFO: Starting Thread Idle (800eb000)	OK
+INFO: Starting Thread Idle (817ce000)	OK
+INFO: Starting Thread Idle (823ce000)	OK
+INFO: Starting Thread Idle (82fcc000)	OK
+INFO: Starting Thread Idle (817cf000)	OK
+INFO: Starting Thread Idle (82fce000)	OK
+INFO: Starting Thread Idle (817cd000)	OK
+INFO: Starting Thread Idle (82fcd000)	OK
+INFO: Starting Thread Idle (82fcb000)	OK
+INFO: Starting Thread Idle (817cc000)	OK
+INFO: Starting Thread Idle (823cc000)	OK
+INFO: Starting Thread Idle (823cd000)	OK
+INFO: Starting Thread Idle (823cb000)	OK
+INFO: kvfsd has been created
+INFO: cpu 13, DQDT update ended [ 3944875 - 4524 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 11311, T 0, U 0
+   Pages_tbl [1, INFO: Starting KVFSD on CPU 8 [ 3963283 ]
+3, 4, 3, 2, 1, 7, 4, 8, 16, ]
+INFO: Virtual File System (VFS) Is Ready
+INFO: Loading Init Process [ /bin/init ]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [INIT, size 146565]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [INIT, size 146565]
+INFO: sys_signal: handler @413c has been registred for signal 15
+INFO: sys_signal: handler @413c has been registred for signal 1
+sys_fork: new task will be placed on cluster 0, cpu 1 [0]
+sys_fork: cpu 0, pid 1, done [s:5051238, bR:5062802, aR:8731144, e:8732250, t:3681012]
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [SH, size 150105]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [SH, size 150105]
+INFO: pthread_destroy: pid 2, tid 0 (817aa000), cluster 0, cpu 1, tm 2823 [ 24, 0, 0, 0, 0, 4 ][12619166]
+sys_fork: new task will be placed on cluster 2, cpu 0 [0]
+sys_fork: cpu 1, pid 2, done [s:13320336, bR:13332195, aR:17001923, e:17003003, t:3682667]
+INFO: System Current TimeStamp 17009549
+INFO: elf_segments_load: Text <0x4000 - 0x10000>
+INFO: Region [4000,10000] has been mapped [DWC, size 148391]
+INFO: elf_segments_load: Data <0x200000 - 0x210000>
+INFO: Region [200000,210000] has been mapped [DWC, size 148391]
+INFO: pthread_destroy: pid 3, tid 0 (80bdc000), cluster 2, cpu 0, tm 2453 [ 29, 0, 0, 0, 0, 3 ][20796429]
+INFO: System Current TimeStamp 27008733
+INFO: cpu 13, DQDT update ended [ 33995617 - 4834 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 10982, T 1, U 6
+   Pages_tbl [6, 0, 4, 4, 1, 1, 4, 3, 8, 16, ]
+INFO: System Current TimeStamp 37036050
+INFO: System Current TimeStamp 47067367
+INFO: System Current TimeStamp 57089207
+INFO: cpu 13, DQDT update ended [ 64051825 - 4857 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 10711, T 1, U 6
+   Pages_tbl [5, 1, 4, 4, 0, 1, 4, 3, 7, 16, ]
+INFO: System Current TimeStamp 67116537
+INFO: System Current TimeStamp 77147054
+INFO: System Current TimeStamp 87173180
+INFO: cpu 13, DQDT update ended [ 94105105 - 4517 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 10442, T 1, U 6
+   Pages_tbl [0, 1, 4, 3, 2, 0, 6, 4, 5, 16, ]
+INFO: System Current TimeStamp 97199237
+INFO: System Current TimeStamp 107226295
+INFO: System Current TimeStamp 117248279
+INFO: cpu 13, DQDT update ended [ 124161783 - 4519 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 10196, T 1, U 6
+   Pages_tbl [2, 3, 3, 2, 1, 1, 4, 3, 5, 16, ]
+INFO: System Current TimeStamp 127274261
+INFO: System Current TimeStamp 137305071
+INFO: System Current TimeStamp 147326954
+INFO: cpu 13, DQDT update ended [ 154209715 - 4591 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 9957, T 1, U 6
+   Pages_tbl [3, 1, 2, 3, 2, 1, 4, 3, 4, 16, ]
+INFO: System Current TimeStamp 157352853
+INFO: System Current TimeStamp 167383281
+INFO: System Current TimeStamp 177405079
+INFO: cpu 13, DQDT update ended [ 184260931 - 4634 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 9718, T 1, U 6
+   Pages_tbl [4, 3, 1, 1, 2, 2, 2, 2, 4, 16, ]
+INFO: System Current TimeStamp 187431148
+INFO: System Current TimeStamp 197461873
+INFO: System Current TimeStamp 207483421
+INFO: cpu 13, DQDT update ended [ 214308722 - 4712 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 9473, T 1, U 6
+   Pages_tbl [3, 3, 2, 2, 2, 2, 2, 2, 3, 16, ]
+INFO: System Current TimeStamp 217509441
+INFO: System Current TimeStamp 227539750
+INFO: System Current TimeStamp 237561408
+INFO: cpu 13, DQDT update ended [ 244356359 - 4731 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 9229, T 1, U 9
+   Pages_tbl [3, 3, 1, 2, 1, 1, 1, 1, 3, 16, ]
+INFO: System Current TimeStamp 247588286
+INFO: System Current TimeStamp 257614867
+INFO: System Current TimeStamp 267641533
+INFO: cpu 13, DQDT update ended [ 274407024 - 4796 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 9074, T 1, U 6
+   Pages_tbl [2, 0, 0, 2, 2, 4, 3, 4, 0, 16, ]
+INFO: System Current TimeStamp 277672247
+INFO: System Current TimeStamp 288732996
+INFO: System Current TimeStamp 298724252
+INFO: cpu 13, DQDT update ended [ 304460113 - 4791 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8924, T 1, U 6
+   Pages_tbl [2, 1, 4, 3, 3, 2, 1, 4, 0, 16, ]
+INFO: System Current TimeStamp 308756305
+INFO: System Current TimeStamp 318778091
+INFO: System Current TimeStamp 328837333
+INFO: cpu 13, DQDT update ended [ 334512855 - 4733 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8770, T 1, U 6
+   Pages_tbl [2, 2, 1, 3, 2, 2, 1, 3, 0, 16, ]
+INFO: System Current TimeStamp 338891125
+INFO: System Current TimeStamp 349920788
+INFO: System Current TimeStamp 359892599
+INFO: cpu 13, DQDT update ended [ 364564294 - 4594 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8615, T 1, U 6
+   Pages_tbl [3, 0, 3, 1, 1, 2, 3, 1, 0, 16, ]
+INFO: System Current TimeStamp 369919045
+INFO: System Current TimeStamp 379941172
+INFO: System Current TimeStamp 389968068
+INFO: cpu 13, DQDT update ended [ 394619842 - 4784 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8465, T 1, U 6
+   Pages_tbl [3, 1, 3, 2, 3, 0, 3, 0, 0, 16, ]
+INFO: System Current TimeStamp 399994413
+INFO: System Current TimeStamp 410032393
+INFO: System Current TimeStamp 420051961
+INFO: cpu 13, DQDT update ended [ 424672430 - 4693 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8309, T 1, U 6
+   Pages_tbl [3, 3, 1, 1, 2, 4, 1, 1, 1, 15, ]
+INFO: System Current TimeStamp 430074131
+INFO: System Current TimeStamp 440100522
+INFO: System Current TimeStamp 450133609
+INFO: cpu 13, DQDT update ended [ 454727574 - 4725 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8159, T 1, U 6
+   Pages_tbl [3, 2, 0, 3, 2, 1, 2, 2, 2, 14, ]
+INFO: System Current TimeStamp 460210451
+INFO: System Current TimeStamp 470211510
+INFO: System Current TimeStamp 480207162
+INFO: cpu 13, DQDT update ended [ 484781969 - 4767 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 8003, T 1, U 6
+   Pages_tbl [1, 3, 1, 3, 0, 3, 3, 4, 4, 12, ]
+INFO: System Current TimeStamp 490237904
+INFO: System Current TimeStamp 500264899
+INFO: System Current TimeStamp 510291514
+INFO: cpu 13, DQDT update ended [ 514834862 - 4783 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7853, T 1, U 6
+   Pages_tbl [1, 2, 2, 2, 1, 2, 1, 4, 4, 12, ]
+INFO: System Current TimeStamp 520337836
+INFO: System Current TimeStamp 530344330
+INFO: System Current TimeStamp 541369111
+INFO: cpu 13, DQDT update ended [ 544889786 - 4634 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7700, T 1, U 6
+   Pages_tbl [2, 3, 3, 2, 1, 1, 1, 3, 4, 12, ]
+INFO: System Current TimeStamp 551443056
+INFO: System Current TimeStamp 561422956
+INFO: System Current TimeStamp 571485996
+INFO: cpu 13, DQDT update ended [ 574944212 - 4655 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7548, T 1, U 6
+   Pages_tbl [2, 3, 1, 2, 2, 4, 3, 0, 4, 12, ]
+INFO: System Current TimeStamp 581513519
+INFO: System Current TimeStamp 591584005
+INFO: System Current TimeStamp 601529695
+INFO: cpu 13, DQDT update ended [ 604997610 - 4623 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7396, T 1, U 7
+   Pages_tbl [2, 1, 4, 2, 2, 1, 2, 0, 4, 12, ]
+INFO: System Current TimeStamp 611556857
+INFO: System Current TimeStamp 621620132
+INFO: System Current TimeStamp 631614390
+INFO: cpu 13, DQDT update ended [ 635049071 - 4772 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7242, T 1, U 6
+   Pages_tbl [4, 1, 1, 2, 3, 2, 1, 1, 3, 12, ]
+INFO: System Current TimeStamp 642643965
+INFO: System Current TimeStamp 652671002
+INFO: System Current TimeStamp 662692873
+INFO: cpu 13, DQDT update ended [ 665101826 - 4713 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 7091, T 1, U 6
+   Pages_tbl [3, 0, 0, 2, 2, 2, 3, 3, 1, 12, ]
+INFO: System Current TimeStamp 672719742
+INFO: System Current TimeStamp 682746515
+INFO: System Current TimeStamp 692773323
+INFO: cpu 13, DQDT update ended [ 695154290 - 4730 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6934, T 1, U 6
+   Pages_tbl [2, 2, 4, 2, 1, 1, 3, 4, 0, 12, ]
+INFO: System Current TimeStamp 702835730
+INFO: System Current TimeStamp 712878795
+INFO: System Current TimeStamp 722852959
+INFO: cpu 13, DQDT update ended [ 725205791 - 4753 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6779, T 1, U 6
+   Pages_tbl [3, 2, 1, 2, 0, 3, 0, 4, 0, 12, ]
+INFO: System Current TimeStamp 732938475
+INFO: System Current TimeStamp 742906056
+INFO: System Current TimeStamp 752933329
+INFO: cpu 13, DQDT update ended [ 755259117 - 4714 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6631, T 1, U 6
+   Pages_tbl [1, 1, 3, 1, 1, 0, 1, 3, 0, 12, ]
+INFO: System Current TimeStamp 763014283
+INFO: System Current TimeStamp 772991149
+INFO: System Current TimeStamp 783017537
+INFO: cpu 13, DQDT update ended [ 785314315 - 5086 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6479, T 1, U 6
+   Pages_tbl [3, 2, 2, 2, 3, 2, 3, 0, 0, 12, ]
+INFO: System Current TimeStamp 793055115
+INFO: System Current TimeStamp 803067128
+INFO: System Current TimeStamp 813124620
+INFO: cpu 13, DQDT update ended [ 815366912 - 4957 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6323, T 1, U 6
+   Pages_tbl [3, 2, 1, 3, 3, 3, 0, 0, 0, 12, ]
+INFO: System Current TimeStamp 823205883
+INFO: System Current TimeStamp 833151823
+INFO: System Current TimeStamp 843178706
+INFO: cpu 13, DQDT update ended [ 845420125 - 4643 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6174, T 1, U 6
+   Pages_tbl [4, 3, 3, 1, 2, 1, 1, 1, 1, 11, ]
+INFO: System Current TimeStamp 853202372
+INFO: System Current TimeStamp 863232895
+INFO: System Current TimeStamp 874325901
+INFO: cpu 13, DQDT update ended [ 875473958 - 5003 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 6018, T 1, U 6
+   Pages_tbl [4, 3, 2, 2, 4, 3, 3, 4, 4, 8, ]
+INFO: System Current TimeStamp 884288616
+INFO: System Current TimeStamp 894315593
+INFO: System Current TimeStamp 904342253
+INFO: cpu 13, DQDT update ended [ 905524851 - 4615 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5865, T 1, U 6
+   Pages_tbl [3, 1, 3, 1, 3, 1, 2, 4, 4, 8, ]
+INFO: System Current TimeStamp 914388653
+INFO: System Current TimeStamp 924395469
+INFO: System Current TimeStamp 934417428
+INFO: cpu 13, DQDT update ended [ 935576905 - 4700 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5715, T 1, U 6
+   Pages_tbl [3, 2, 1, 1, 2, 3, 1, 3, 4, 8, ]
+INFO: System Current TimeStamp 944444059
+INFO: System Current TimeStamp 954503167
+INFO: System Current TimeStamp 964512701
+INFO: cpu 13, DQDT update ended [ 965631145 - 4879 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5558, T 1, U 6
+   Pages_tbl [4, 3, 1, 1, 0, 1, 2, 2, 4, 8, ]
+INFO: System Current TimeStamp 974524367
+INFO: System Current TimeStamp 984551025
+INFO: System Current TimeStamp 994577779
+INFO: cpu 13, DQDT update ended [ 995683552 - 4508 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5404, T 1, U 6
+   Pages_tbl [2, 3, 1, 2, 2, 3, 2, 0, 4, 8, ]
+INFO: System Current TimeStamp 1004621713
+INFO: System Current TimeStamp 1014631048
+INFO: System Current TimeStamp 1024673418
+INFO: cpu 13, DQDT update ended [ 1025734597 - 4798 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5251, T 1, U 6
+   Pages_tbl [1, 3, 1, 1, 3, 2, 0, 0, 4, 8, ]
+INFO: System Current TimeStamp 1034684516
+INFO: System Current TimeStamp 1044713056
+INFO: System Current TimeStamp 1054740220
+INFO: cpu 13, DQDT update ended [ 1055788716 - 4569 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 5100, T 1, U 6
+   Pages_tbl [2, 3, 1, 2, 1, 2, 2, 2, 2, 8, ]
+INFO: System Current TimeStamp 1064796245
+INFO: System Current TimeStamp 1074845525
+INFO: System Current TimeStamp 1084821093
+INFO: cpu 13, DQDT update ended [ 1085842018 - 4637 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4944, T 1, U 6
+   Pages_tbl [2, 3, 2, 2, 3, 2, 3, 4, 0, 8, ]
+INFO: System Current TimeStamp 1094879167
+INFO: System Current TimeStamp 1104874364
+INFO: System Current TimeStamp 1114901426
+INFO: cpu 13, DQDT update ended [ 1115894259 - 4760 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4796, T 1, U 6
+   Pages_tbl [2, 3, 3, 1, 2, 2, 1, 4, 0, 8, ]
+INFO: System Current TimeStamp 1124988557
+INFO: System Current TimeStamp 1134954284
+INFO: System Current TimeStamp 1145033624
+INFO: cpu 13, DQDT update ended [ 1145944774 - 4654 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4637, T 1, U 6
+   Pages_tbl [1, 2, 4, 1, 4, 0, 1, 3, 0, 8, ]
+INFO: System Current TimeStamp 1155007109
+INFO: System Current TimeStamp 1165033798
+INFO: System Current TimeStamp 1175060761
+INFO: cpu 13, DQDT update ended [ 1175995194 - 4860 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4485, T 1, U 6
+   Pages_tbl [3, 3, 1, 3, 2, 4, 3, 0, 0, 8, ]
+INFO: System Current TimeStamp 1185129842
+INFO: System Current TimeStamp 1195152054
+INFO: System Current TimeStamp 1205144302
+INFO: cpu 13, DQDT update ended [ 1206045705 - 4861 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4334, T 1, U 6
+   Pages_tbl [4, 1, 2, 2, 1, 0, 3, 0, 0, 8, ]
+INFO: System Current TimeStamp 1216193832
+INFO: System Current TimeStamp 1226195570
+INFO: cpu 13, DQDT update ended [ 1236094846 - 4699 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4183, T 1, U 6
+   Pages_tbl [1, 1, 3, 1, 2, 3, 1, 1, 1, 7, ]
+INFO: System Current TimeStamp 1237306917
+INFO: System Current TimeStamp 1247324685
+INFO: System Current TimeStamp 1257349597
+INFO: cpu 13, DQDT update ended [ 1266148066 - 4955 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 4034, T 1, U 6
+   Pages_tbl [2, 4, 2, 2, 4, 3, 4, 4, 4, 4, ]
+INFO: System Current TimeStamp 1267305026
+INFO: System Current TimeStamp 1277395220
+INFO: System Current TimeStamp 1287358276
+INFO: cpu 13, DQDT update ended [ 1296199962 - 4776 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3877, T 1, U 6
+   Pages_tbl [1, 0, 3, 1, 3, 1, 3, 4, 4, 4, ]
+INFO: System Current TimeStamp 1297445047
+INFO: System Current TimeStamp 1308418381
+INFO: System Current TimeStamp 1318517760
+INFO: cpu 13, DQDT update ended [ 1326252297 - 4761 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3724, T 1, U 6
+   Pages_tbl [2, 1, 2, 4, 2, 4, 1, 3, 4, 4, ]
+INFO: System Current TimeStamp 1328472055
+INFO: System Current TimeStamp 1338498936
+INFO: System Current TimeStamp 1349554572
+INFO: cpu 13, DQDT update ended [ 1356305794 - 4708 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3574, T 1, U 6
+   Pages_tbl [2, 4, 3, 2, 1, 0, 1, 3, 4, 4, ]
+INFO: System Current TimeStamp 1359551287
+INFO: System Current TimeStamp 1369577961
+INFO: System Current TimeStamp 1379637715
+INFO: cpu 13, DQDT update ended [ 1386357086 - 4897 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3421, T 1, U 6
+   Pages_tbl [1, 4, 1, 2, 2, 3, 3, 0, 4, 4, ]
+INFO: System Current TimeStamp 1390664741
+INFO: System Current TimeStamp 1400677964
+INFO: System Current TimeStamp 1410738662
+INFO: cpu 13, DQDT update ended [ 1416409112 - 4947 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3265, T 1, U 6
+   Pages_tbl [3, 3, 2, 4, 3, 3, 0, 0, 4, 4, ]
+INFO: System Current TimeStamp 1420713997
+INFO: System Current TimeStamp 1430744791
+INFO: System Current TimeStamp 1440766570
+INFO: cpu 13, DQDT update ended [ 1446459719 - 4703 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 3112, T 1, U 6
+   Pages_tbl [2, 1, 1, 2, 3, 1, 1, 1, 3, 4, ]
+INFO: System Current TimeStamp 1450793158
+INFO: System Current TimeStamp 1460840458
+INFO: System Current TimeStamp 1470895256
+INFO: cpu 13, DQDT update ended [ 1476511339 - 4807 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2962, T 1, U 6
+   Pages_tbl [4, 3, 2, 0, 2, 3, 4, 4, 0, 4, ]
+INFO: System Current TimeStamp 1480934660
+INFO: System Current TimeStamp 1490976182
+INFO: System Current TimeStamp 1500926421
+INFO: cpu 13, DQDT update ended [ 1506564577 - 4894 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2807, T 1, U 6
+   Pages_tbl [3, 2, 2, 1, 2, 0, 3, 4, 0, 4, ]
+INFO: System Current TimeStamp 1510987377
+INFO: System Current TimeStamp 1520979172
+INFO: System Current TimeStamp 1531044225
+INFO: cpu 13, DQDT update ended [ 1536616837 - 4765 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2659, T 1, U 6
+   Pages_tbl [1, 1, 2, 1, 1, 4, 1, 3, 0, 4, ]
+INFO: System Current TimeStamp 1542109230
+INFO: System Current TimeStamp 1552105377
+INFO: System Current TimeStamp 1562088411
+INFO: cpu 13, DQDT update ended [ 1566671598 - 4700 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2504, T 1, U 6
+   Pages_tbl [2, 3, 2, 3, 2, 2, 1, 2, 0, 4, ]
+INFO: System Current TimeStamp 1572115242
+INFO: System Current TimeStamp 1582163668
+INFO: System Current TimeStamp 1592168848
+INFO: cpu 13, DQDT update ended [ 1596732008 - 5791 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2358, T 1, U 6
+   Pages_tbl [2, 2, 4, 0, 2, 2, 3, 0, 0, 4, ]
+INFO: System Current TimeStamp 1602206172
+INFO: System Current TimeStamp 1612225593
+INFO: System Current TimeStamp 1622252538
+INFO: cpu 13, DQDT update ended [ 1626796532 - 6678 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2358, T 1, U 6
+   Pages_tbl [2, 2, 4, 0, 2, 2, 3, 0, 0, 4, ]
+INFO: System Current TimeStamp 1632286774
+INFO: System Current TimeStamp 1642309309
+INFO: System Current TimeStamp 1652337910
+INFO: cpu 13, DQDT update ended [ 1656866223 - 6082 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2358, T 1, U 6
+   Pages_tbl [2, 2, 4, 0, 2, 2, 3, 0, 0, 4, ]
+INFO: System Current TimeStamp 1662374984
+INFO: System Current TimeStamp 1672396023
+INFO: System Current TimeStamp 1682424503
+INFO: cpu 13, DQDT update ended [ 1686936883 - 6254 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2358, T 1, U 6
+   Pages_tbl [2, 2, 4, 0, 2, 2, 3, 0, 0, 4, ]
+INFO: System Current TimeStamp 1692457995
+INFO: System Current TimeStamp 1702482979
+INFO: do_thread_create: tid 805eb000, pid 3, order 0, flags 40, cluster 2, cpu 1 [ m 5538, c 8819, a 6100125, l 836, s 756, e 6116074 ][1712352496]
+INFO: do_thread_create: tid 805ee000, pid 3, order 2, flags 40, cluster 2, cpu 2 [ m 4482, c 8349, a 158, l 586, s 517, e 14092 ][1712419692]
+INFO: do_thread_create: tid 805f1000, pid 3, order 3, flags 40, cluster 2, cpu 3 [ m 5202, c 9374, a 148, l 607, s 499, e 15830 ][1712461575]
+INFO: do_thread_create: tid 81748000, pid 3, order 4, flags 40, cluster 0, cpu 2 [ m 6670, c 8827, a 235, l 1008, s 754, e 17494 ][1712506885]
+INFO: System Current TimeStamp 1712507078
+INFO: do_thread_create: tid 8174b000, pid 3, order 5, flags 40, cluster 0, cpu 3 [ m 7557, c 9062, a 251, l 897, s 766, e 18533 ][1712568112]
+INFO: do_thread_create: tid 82367000, pid 3, order 6, flags 40, cluster 1, cpu 0 [ m 15092, c 6986, a 259, l 987, s 731, e 24055 ][1712629704]
+INFO: do_thread_create: tid 8236c000, pid 3, order 7, flags 40, cluster 1, cpu 1 [ m 6324, c 8128, a 208, l 986, s 497, e 16143 ][1712680653]
+INFO: do_thread_create: tid 81dac000, pid 3, order 8, flags 40, cluster 1, cpu 2 [ m 6014, c 9549, a 224, l 990, s 542, e 17319 ][1712733108]
+INFO: do_thread_create: tid 81db0000, pid 3, order 9, flags 40, cluster 1, cpu 3 [ m 17223, c 12103, a 320, l 1176, s 970, e 31792 ][1712801843]
+INFO: do_thread_create: tid 82c5d000, pid 3, order 10, flags 40, cluster 3, cpu 0 [ m 16482, c 6843, a 248, l 1067, s 742, e 25382 ][1712867273]
+INFO: do_thread_create: tid 82c5f000, pid 3, order 11, flags 40, cluster 3, cpu 1 [ m 9472, c 9955, a 413, l 1100, s 690, e 21630 ][1712941502]
+INFO: do_thread_create: tid 82e27000, pid 3, order 12, flags 40, cluster 3, cpu 2 [ m 7872, c 8706, a 252, l 1087, s 561, e 18478 ][1712998907]
+INFO: do_thread_create: tid 82e2c000, pid 3, order 13, flags 40, cluster 3, cpu 3 [ m 8819, c 11823, a 294, l 1026, s 560, e 22522 ][1713059755]
+INFO: do_thread_create: tid 8061b000, pid 3, order 14, flags 40, cluster 2, cpu 1 [ m 8780, c 13230, a 253, l 1040, s 1241, e 24544 ][1713972633]
+INFO: do_thread_create: tid 8130b000, pid 3, order 15, flags 40, cluster 0, cpu 0 [ m 18034, c 14077, a 310, l 1414, s 956, e 34791 ][1714071974]
+INFO: [pid 3, tid 14 (8061b000)] has been migrated from [cid 2, cpu 1] to [cid 0, cpu 1] [1717021609 - 25738]
+INFO: cpu 13, DQDT update ended [ 1717042140 - 8091 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2274, T 5, U 65
+   Pages_tbl [26, 16, 4, 3, 2, 3, 2, 1, 1, 3, ]
+kthread_destroy: pid 3, tid 14 (8061b000), current pid 0, tid 0 (80bfc000), cpu 9 [1722005466]
+INFO: System Current TimeStamp 1722601172
+INFO: System Current TimeStamp 1732655572
+INFO: pthread_destroy: pid 3, tid 0 (805eb000), cluster 2, cpu 1, tm 4081 [ 547, 1, 0, 0, 0, 13 ][1732997485]
+INFO: pthread_destroy: pid 3, tid 2 (805ee000), cluster 2, cpu 2, tm 2968 [ 545, 0, 0, 0, 0, 20 ][1733770383]
+INFO: pthread_destroy: pid 3, tid 3 (805f1000), cluster 2, cpu 3, tm 2501 [ 545, 0, 0, 0, 0, 21 ][1733819134]
+INFO: pthread_destroy: pid 3, tid 4 (81748000), cluster 0, cpu 2, tm 6678 [ 545, 0, 0, 0, 0, 18 ][1733832363]
+INFO: pthread_destroy: pid 3, tid 5 (8174b000), cluster 0, cpu 3, tm 7465 [ 545, 0, 0, 0, 0, 18 ][1733836116]
+INFO: pthread_destroy: pid 3, tid 6 (82367000), cluster 1, cpu 0, tm 9809 [ 545, 0, 0, 0, 0, 18 ][1733840449]
+INFO: pthread_destroy: pid 3, tid 7 (8236c000), cluster 1, cpu 1, tm 8706 [ 545, 0, 0, 0, 0, 19 ][1733843203]
+INFO: pthread_destroy: pid 3, tid 9 (81db0000), cluster 1, cpu 3, tm 7482 [ 545, 0, 0, 0, 0, 19 ][1733847056]
+INFO: pthread_destroy: pid 3, tid 8 (81dac000), cluster 1, cpu 2, tm 11862 [ 545, 0, 0, 0, 0, 19 ][1733849490]
+INFO: pthread_destroy: pid 3, tid 10 (82c5d000), cluster 3, cpu 0, tm 8068 [ 545, 0, 0, 0, 0, 18 ][1733851319]
+INFO: pthread_destroy: pid 3, tid 11 (82c5f000), cluster 3, cpu 1, tm 6031 [ 545, 0, 0, 0, 0, 18 ][1733852792]
+INFO: pthread_destroy: pid 3, tid 12 (82e27000), cluster 3, cpu 2, tm 6060 [ 545, 0, 0, 0, 0, 18 ][1733855771]
+INFO: pthread_destroy: pid 3, tid 13 (82e2c000), cluster 3, cpu 3, tm 4273 [ 545, 0, 0, 0, 0, 17 ][1733857682]
+INFO: pthread_destroy: pid 3, tid 14 (80ddd000), cluster 0, cpu 1, tm 3431 [ 545, 0, 0, 5, 0, 17 ][1733890527]
+INFO: pthread_destroy: pid 3, tid 15 (8130b000), cluster 0, cpu 0, tm 4858 [ 545, 0, 0, 0, 0, 18 ][1733898836]
+INFO: System Current TimeStamp 1742683872
+INFO: cpu 13, DQDT update ended [ 1749149346 - 6014 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1752717821
+INFO: System Current TimeStamp 1762756715
+INFO: System Current TimeStamp 1772777459
+INFO: cpu 13, DQDT update ended [ 1779214066 - 4163 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1782800488
+INFO: System Current TimeStamp 1792828069
+INFO: System Current TimeStamp 1802847668
+INFO: cpu 13, DQDT update ended [ 1809262777 - 4171 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1812870847
+INFO: System Current TimeStamp 1822898147
+INFO: System Current TimeStamp 1832917347
+INFO: cpu 13, DQDT update ended [ 1839312172 - 4180 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1842940402
+INFO: System Current TimeStamp 1852967456
+INFO: System Current TimeStamp 1862986696
+INFO: cpu 13, DQDT update ended [ 1869374226 - 5612 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1873009642
+INFO: System Current TimeStamp 1883036779
+INFO: System Current TimeStamp 1893056485
+INFO: cpu 13, DQDT update ended [ 1899429793 - 4190 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1903079737
+INFO: System Current TimeStamp 1913107163
+INFO: System Current TimeStamp 1923134044
+INFO: cpu 13, DQDT update ended [ 1929503655 - 6346 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1933175821
+INFO: System Current TimeStamp 1943211322
+INFO: System Current TimeStamp 1953230715
+INFO: cpu 13, DQDT update ended [ 1959564348 - 4181 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1963253991
+INFO: System Current TimeStamp 1973280933
+INFO: System Current TimeStamp 1983300290
+INFO: cpu 13, DQDT update ended [ 1989631054 - 4155 ]
+cpu 13, cid 3, level 4, index 0, Indicators Summary:
+   M 2334, T 1, U 6
+   Pages_tbl [20, 27, 11, 11, 3, 5, 4, 3, 3, 1, ]
+INFO: System Current TimeStamp 1993323553
+INFO: Thread 80bdf000 has released FPU on CPU 8

@@ -96,11 +96,11 @@ INFO: elf_segments_load: Text <0x4000 - 0x10000>
 INFO: Region [4000,10000] has been mapped [DWC, size 148391]
 INFO: elf_segments_load: Data <0x200000 - 0x210000>
 INFO: Region [200000,210000] has been mapped [DWC, size 148391]
-INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2554 [ 29, 0, 0, 0, 0, 4 ][22343089]
-INFO: do_thread_create: tid 80171000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 9849, c 6463, a 110, l 685, s 517, e 17624 ][23050059]
-INFO: do_thread_create: tid 80173000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4327, c 7933, a 115, l 633, s 486, e 13494 ][23088108]
-INFO: do_thread_create: tid 80175000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4435, c 7709, a 85, l 613, s 519, e 13361 ][23127293]
-INFO: pthread_destroy: pid 3, tid 0 (80171000), cluster 0, cpu 3, tm 2900 [ 1, 0, 0, 0, 0, 0 ][23153172]
-INFO: pthread_destroy: pid 3, tid 2 (80173000), cluster 0, cpu 0, tm 3141 [ 1, 0, 0, 0, 0, 0 ][23155916]
-INFO: pthread_destroy: pid 3, tid 3 (80175000), cluster 0, cpu 1, tm 2878 [ 1, 0, 0, 0, 0, 0 ][23168974]
+INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2572 [ 29, 0, 0, 0, 0, 4 ][22343084]
+INFO: do_thread_create: tid 80171000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 9823, c 6489, a 110, l 685, s 513, e 17620 ][23050613]
+INFO: do_thread_create: tid 80173000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4369, c 7841, a 115, l 633, s 487, e 13445 ][23089056]
+INFO: do_thread_create: tid 80175000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4385, c 7715, a 85, l 619, s 525, e 13329 ][23128341]
+INFO: pthread_destroy: pid 3, tid 0 (80171000), cluster 0, cpu 3, tm 2993 [ 1, 0, 0, 0, 0, 0 ][23154672]
+INFO: pthread_destroy: pid 3, tid 2 (80173000), cluster 0, cpu 0, tm 3376 [ 1, 0, 0, 0, 0, 0 ][23156839]
+INFO: pthread_destroy: pid 3, tid 3 (80175000), cluster 0, cpu 1, tm 2819 [ 1, 0, 0, 0, 0, 0 ][23169990]
 INFO: Thread 81fba000 has released FPU on CPU 2

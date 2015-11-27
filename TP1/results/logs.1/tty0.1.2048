@@ -96,12 +96,12 @@ INFO: elf_segments_load: Text <0x4000 - 0x10000>
 INFO: Region [4000,10000] has been mapped [DWC, size 148391]
 INFO: elf_segments_load: Data <0x200000 - 0x210000>
 INFO: Region [200000,210000] has been mapped [DWC, size 148391]
-INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2502 [ 29, 0, 0, 0, 0, 4 ][22336464]
-INFO: System Current TimeStamp 26008426
-INFO: do_thread_create: tid 81f12000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 9463, c 6997, a 108, l 715, s 675, e 17958 ][27026437]
-INFO: do_thread_create: tid 81f14000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4347, c 8095, a 86, l 634, s 507, e 13669 ][27066933]
-INFO: do_thread_create: tid 81f16000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4503, c 8368, a 141, l 663, s 581, e 14256 ][27106741]
-INFO: pthread_destroy: pid 3, tid 0 (81f12000), cluster 0, cpu 3, tm 3742 [ 1, 0, 0, 0, 0, 0 ][27209463]
-INFO: pthread_destroy: pid 3, tid 2 (81f14000), cluster 0, cpu 0, tm 3307 [ 1, 0, 0, 0, 0, 0 ][27210527]
-INFO: pthread_destroy: pid 3, tid 3 (81f16000), cluster 0, cpu 1, tm 3084 [ 1, 0, 0, 0, 0, 0 ][27228682]
+INFO: pthread_destroy: pid 3, tid 0 (8014b000), cluster 0, cpu 2, tm 2504 [ 29, 0, 0, 0, 0, 4 ][22336416]
+INFO: System Current TimeStamp 26008364
+INFO: do_thread_create: tid 81f12000, pid 3, order 0, flags 40, cluster 0, cpu 3 [ m 9464, c 6979, a 108, l 700, s 674, e 17925 ][27026311]
+INFO: do_thread_create: tid 81f14000, pid 3, order 2, flags 40, cluster 0, cpu 0 [ m 4357, c 8162, a 87, l 630, s 513, e 13749 ][27066973]
+INFO: do_thread_create: tid 81f16000, pid 3, order 3, flags 40, cluster 0, cpu 1 [ m 4523, c 8359, a 128, l 703, s 591, e 14304 ][27106881]
+INFO: pthread_destroy: pid 3, tid 0 (81f12000), cluster 0, cpu 3, tm 3659 [ 1, 0, 0, 0, 0, 0 ][27209293]
+INFO: pthread_destroy: pid 3, tid 2 (81f14000), cluster 0, cpu 0, tm 3274 [ 1, 0, 0, 0, 0, 0 ][27210624]
+INFO: pthread_destroy: pid 3, tid 3 (81f16000), cluster 0, cpu 1, tm 3084 [ 1, 0, 0, 0, 0, 0 ][27228590]
 INFO: Thread 81fba000 has released FPU on CPU 2
